@@ -1,0 +1,4 @@
+Experiment,SNR Threshold (dB),Rotor Speed,Algorithm,Total Samples After Balancing,Outage Probability,Average Beamforming Time (s)
+nh_dec26_gain8db_3m_static_online_5G_dec26,14.88,0.125deg/sec,5G NR Adaptive Beamforming,55,0.14545454545454545,7.913227488777855
+nh_dec26_gain8db_3m_static_online_5G_dec26,17.64,0.125deg/sec,5G NR Adaptive Beamforming,55,0.16363636363636364,7.913227488777855
+nh_dec26_gain8db_3m_static_online_5G_dec26,18.82,0.125deg/sec,5G NR Adaptive Beamforming,55,0.23636363636363636,7.913227488777855

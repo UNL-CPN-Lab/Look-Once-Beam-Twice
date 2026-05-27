@@ -1,0 +1,42 @@
+# =============================================================================
+# external_eval/.gitignore
+# Datasets and model weights are NOT redistributed here (large + licensed).
+# Download per the README; they stay on disk but never get committed.
+# =============================================================================
+
+# --- DeepSense 6G data (download from https://www.deepsense6g.net/) ----------
+/Scenario6/
+/scenario6/
+/scenario7/
+/scenario9/
+
+# --- Model weights -----------------------------------------------------------
+# YOLOv11 auto-downloads via ultralytics; baseline checkpoints come from the
+# upstream repos (see README). None of these belong in git.
+*.pt
+yolo11x.pt
+**/checkpoint/
+**/saved_folder/
+**/saved_folder_eval/
+
+# --- Archives ----------------------------------------------------------------
+*.zip
+
+# --- Stale top-level roll-ups (the notebooks now write into the
+#     *ModelAnalysis/ folders; nothing should sit at this level) -------------
+/combined_outage_timing_summary_Scenario*.csv
+
+# --- Caches / OS cruft -------------------------------------------------------
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# NOTE: result CSVs under ResNet50ModelAnalysis/ and MNet_LeNet_Model_Analysis/
+# ARE tracked on purpose — they are the small artifacts that reproduce
+# Table II / Fig. 11 without re-running the full pipeline.
+
+# --- DeepSense baseline artifact (NOT ours to ship) --------------------------
+# build_net.py is the ResNet-50 builder from the upstream
+# Vision-Position-Beam-Prediction repo; users download it themselves.
+build_net.py

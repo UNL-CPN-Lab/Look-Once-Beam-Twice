@@ -1,0 +1,14 @@
+{
+    "experiment_name": "sc_jul20_gain8db_3m_off_MLP9",
+    "experiment_directory": "Adaptive_Beamforming_SC/sc_jul20_gain8db_3m_off_MLP9",
+    "timestamp": "2025-07-20 23:40:53",
+    "location": "sc",
+    "gain": "8db",
+    "distance": "3m",
+    "test_number": "off_MLP9",
+    "sample_size": 2000,
+    "padding": 100,
+    "rotor_speed": "0.5deg/sec",
+    "Threshold": 7.74,
+    "Algorithm": "Adaptive Beamforming"
+}

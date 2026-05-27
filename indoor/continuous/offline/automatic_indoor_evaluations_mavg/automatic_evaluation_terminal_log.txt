@@ -1,0 +1,231 @@
+[2025-07-20 19:38:30] 
+[LOG] Automatic evaluation pipeline started at[2025-07-20 19:38:30] 2025-07-20 19:38:30[2025-07-20 19:38:30] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:30] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-07-20 19:38:30] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:30] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:30] 
+[STEP 2] Running Optimized Beam Sweep...[2025-07-20 19:38:30] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:30] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:30] 
+[STEP 3] Extracting Ground Truth Data...[2025-07-20 19:38:30] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:35] [INFO] Extraction complete.[2025-07-20 19:38:35] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.02 dB (quantile = 0.8)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 19:38:35] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:35] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 19:38:35] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:35] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 19:38:35] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:35] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 19:38:35] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:35] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 19:38:35] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:38:35] 
+[INFO] Running Adaptive Beamforming for SNR=0.8, RotorSpeed=0.25[2025-07-20 19:38:35] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG1[2025-07-20 19:48:25] [INFO] Extraction complete.[2025-07-20 19:48:25] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.02 dB (quantile = 0.8)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 19:48:25] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:48:25] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 19:48:25] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:48:25] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 19:48:25] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:48:25] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 19:48:25] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:48:25] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 19:48:25] ----------------------------------------------------------------------------------------------------------[2025-07-20 19:48:25] 
+[INFO] Running Adaptive Beamforming for SNR=0.8, RotorSpeed=0.5[2025-07-20 19:48:25] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG2[2025-07-20 20:00:29] [INFO] Extraction complete.[2025-07-20 20:00:29] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.02 dB (quantile = 0.8)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:00:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:00:29] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:00:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:00:29] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:00:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:00:29] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:00:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:00:29] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:00:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:00:29] 
+[INFO] Running Adaptive Beamforming for SNR=0.8, RotorSpeed=1[2025-07-20 20:00:29] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG3[2025-07-20 20:06:29] [INFO] Extraction complete.[2025-07-20 20:06:29] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.02 dB (quantile = 0.8)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:06:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:06:29] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:06:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:06:29] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:06:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:06:29] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:06:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:06:29] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:06:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:06:29] 
+[INFO] Running Adaptive Beamforming for SNR=0.8, RotorSpeed=2[2025-07-20 20:06:29] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG4[2025-07-20 20:09:29] [INFO] Extraction complete.[2025-07-20 20:09:29] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.02 dB (quantile = 0.8)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:09:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:09:29] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:09:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:09:29] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:09:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:09:29] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:09:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:09:29] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:09:29] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:09:29] 
+[INFO] Running Adaptive Beamforming for SNR=0.8, RotorSpeed=4[2025-07-20 20:09:29] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG5[2025-07-20 20:11:00] [INFO] Extraction complete.[2025-07-20 20:11:00] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.74 dB (quantile = 0.9)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:11:00] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:00] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:11:00] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:00] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:11:00] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:00] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:11:00] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:00] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:11:00] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:00] 
+[INFO] Running Adaptive Beamforming for SNR=0.9, RotorSpeed=0.25[2025-07-20 20:11:00] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG6[2025-07-20 20:11:42] [INFO] Extraction complete.[2025-07-20 20:11:42] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.74 dB (quantile = 0.9)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:11:42] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:42] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:11:42] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:42] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:11:42] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:42] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:11:42] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:42] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:11:42] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:11:42] 
+[INFO] Running Adaptive Beamforming for SNR=0.9, RotorSpeed=0.5[2025-07-20 20:11:42] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG7[2025-07-20 20:23:57] [INFO] Extraction complete.[2025-07-20 20:23:57] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.74 dB (quantile = 0.9)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:23:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:23:57] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:23:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:23:57] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:23:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:23:57] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:23:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:23:57] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:23:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:23:57] 
+[INFO] Running Adaptive Beamforming for SNR=0.9, RotorSpeed=1[2025-07-20 20:23:57] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG8[2025-07-20 20:29:56] [INFO] Extraction complete.[2025-07-20 20:29:56] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.74 dB (quantile = 0.9)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:29:56] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:29:56] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:29:56] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:29:56] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:29:56] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:29:56] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:29:56] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:29:56] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:29:56] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:29:56] 
+[INFO] Running Adaptive Beamforming for SNR=0.9, RotorSpeed=2[2025-07-20 20:29:56] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG9[2025-07-20 20:32:57] [INFO] Extraction complete.[2025-07-20 20:32:57] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 7.74 dB (quantile = 0.9)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:32:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:32:57] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:32:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:32:57] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:32:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:32:57] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:32:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:32:57] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:32:57] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:32:57] 
+[INFO] Running Adaptive Beamforming for SNR=0.9, RotorSpeed=4[2025-07-20 20:32:57] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG10[2025-07-20 20:34:27] [INFO] Extraction complete.[2025-07-20 20:34:27] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 8.76 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:34:27] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:34:27] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:34:27] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:34:27] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:34:27] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:34:27] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:34:27] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:34:27] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:34:27] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:34:27] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=0.25[2025-07-20 20:34:27] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG11[2025-07-20 20:35:09] [INFO] Extraction complete.[2025-07-20 20:35:09] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 8.76 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:35:09] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:35:09] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:35:09] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:35:09] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:35:09] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:35:09] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:35:09] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:35:09] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:35:09] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:35:09] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=0.5[2025-07-20 20:35:09] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG12[2025-07-20 20:47:23] [INFO] Extraction complete.[2025-07-20 20:47:23] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 8.76 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:47:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:47:23] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:47:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:47:23] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:47:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:47:23] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:47:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:47:23] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:47:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:47:23] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=1[2025-07-20 20:47:23] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG13[2025-07-20 20:53:23] [INFO] Extraction complete.[2025-07-20 20:53:23] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 8.76 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:53:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:53:23] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:53:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:53:23] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:53:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:53:23] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:53:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:53:23] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:53:23] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:53:23] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=2[2025-07-20 20:53:23] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG14[2025-07-20 20:56:24] [INFO] Extraction complete.[2025-07-20 20:56:24] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 8.76 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 33
+Step 4: Extracting best Rx beam for Tx = 33
+[INFO] File saved: snr_tx33_rx32_forward.csv
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-20 20:56:24] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:56:24] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-20 20:56:24] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:56:24] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-20 20:56:24] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:56:24] [INFO] Reference Max SNR (boresight ±30°) = 20.06 dB[2025-07-20 20:56:24] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:56:24] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-20 20:56:24] ----------------------------------------------------------------------------------------------------------[2025-07-20 20:56:24] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=4[2025-07-20 20:56:24] 
+[RUNNING] continuous_offline_main_mavg.py --test_number off_MAVG15[2025-07-20 20:57:49] 
+[LOG] Automatic evaluation pipeline completed at[2025-07-20 20:57:49] 2025-07-20 20:57:49[2025-07-20 20:57:49] [LOG] Total execution time: 4759.53 seconds (79.33 minutes)

@@ -1,0 +1,308 @@
+[2025-07-23 21:34:39] 
+[LOG] Automatic evaluation pipeline started at[2025-07-23 21:34:39] 2025-07-23 21:34:39[2025-07-23 21:34:39] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=0.25[2025-07-23 21:34:39] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:34:39] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-07-23 21:34:39] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:34:39] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:34:39] 
+[STEP 2] Running Optimized Beam Sweep...[2025-07-23 21:34:39] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:34:39] 
+[RUNNING] optimized_beam_sweep.py [2025-07-23 21:43:08] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:43:08] 
+[STEP 3] Extracting Ground Truth Data...[2025-07-23 21:43:08] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:43:08] [INFO] Extraction complete.[2025-07-23 21:43:08] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 18.92 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+[DEBUG] No match in angle_-20 for Tx=27, Rx=32
+[DEBUG] No match in angle_-25 for Tx=27, Rx=32
+[DEBUG] No match in angle_-30 for Tx=27, Rx=32
+[DEBUG] No match in angle_-35 for Tx=27, Rx=32
+[DEBUG] No match in angle_-40 for Tx=27, Rx=32
+[DEBUG] No match in angle_-45 for Tx=27, Rx=32
+[DEBUG] No match in angle_-50 for Tx=27, Rx=32
+[DEBUG] No match in angle_-55 for Tx=27, Rx=32
+[DEBUG] No match in angle_-60 for Tx=27, Rx=32
+[DEBUG] No match in angle_-65 for Tx=27, Rx=32
+[DEBUG] No match in angle_20 for Tx=27, Rx=32
+[DEBUG] No match in angle_25 for Tx=27, Rx=32
+[DEBUG] No match in angle_30 for Tx=27, Rx=32
+[DEBUG] No match in angle_35 for Tx=27, Rx=32
+[DEBUG] No match in angle_40 for Tx=27, Rx=32
+[DEBUG] No match in angle_45 for Tx=27, Rx=32
+[DEBUG] No match in angle_50 for Tx=27, Rx=32
+[DEBUG] No match in angle_55 for Tx=27, Rx=32
+[DEBUG] No match in angle_60 for Tx=27, Rx=32
+[DEBUG] No match in angle_65 for Tx=27, Rx=32
+[INFO] File saved: snr_tx27_rx32_forward.csv
+[DEBUG] No match in angle_-20 for Tx=32, Rx=32
+[DEBUG] No match in angle_-25 for Tx=32, Rx=32
+[DEBUG] No match in angle_-30 for Tx=32, Rx=32
+[DEBUG] No match in angle_-35 for Tx=32, Rx=32
+[DEBUG] No match in angle_-40 for Tx=32, Rx=32
+[DEBUG] No match in angle_-45 for Tx=32, Rx=32
+[DEBUG] No match in angle_-50 for Tx=32, Rx=32
+[DEBUG] No match in angle_-55 for Tx=32, Rx=32
+[DEBUG] No match in angle_-60 for Tx=32, Rx=32
+[DEBUG] No match in angle_-65 for Tx=32, Rx=32
+[DEBUG] No match in angle_20 for Tx=32, Rx=32
+[DEBUG] No match in angle_25 for Tx=32, Rx=32
+[DEBUG] No match in angle_30 for Tx=32, Rx=32
+[DEBUG] No match in angle_35 for Tx=32, Rx=32
+[DEBUG] No match in angle_40 for Tx=32, Rx=32
+[DEBUG] No match in angle_45 for Tx=32, Rx=32
+[DEBUG] No match in angle_50 for Tx=32, Rx=32
+[DEBUG] No match in angle_55 for Tx=32, Rx=32
+[DEBUG] No match in angle_60 for Tx=32, Rx=32
+[DEBUG] No match in angle_65 for Tx=32, Rx=32
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-23 21:43:08] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:43:08] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-23 21:43:08] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:43:08] 
+[RUNNING] plot_ground_truth.py [2025-07-23 21:43:11] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-23 21:43:11] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:43:11] [INFO] Reference Max SNR (boresight ±30°) = 18.44 dB[2025-07-23 21:43:11] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:43:11] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-23 21:43:11] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:43:11] 
+[RUNNING] continuous_online_main_mavg.py --test_number QT_OAKD_MAVG11[2025-07-23 21:55:58] 
+--------------------------------------------------------------------------------------------------------------[2025-07-23 21:55:58] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=0.5[2025-07-23 21:55:58] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:55:58] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-07-23 21:55:58] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:55:58] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:55:58] 
+[STEP 2] Running Optimized Beam Sweep...[2025-07-23 21:55:58] ----------------------------------------------------------------------------------------------------------[2025-07-23 21:55:58] 
+[RUNNING] optimized_beam_sweep.py [2025-07-23 22:04:26] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:04:26] 
+[STEP 3] Extracting Ground Truth Data...[2025-07-23 22:04:26] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:04:27] [INFO] Extraction complete.[2025-07-23 22:04:27] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 18.93 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+[DEBUG] No match in angle_-20 for Tx=27, Rx=32
+[DEBUG] No match in angle_-25 for Tx=27, Rx=32
+[DEBUG] No match in angle_-30 for Tx=27, Rx=32
+[DEBUG] No match in angle_-35 for Tx=27, Rx=32
+[DEBUG] No match in angle_-40 for Tx=27, Rx=32
+[DEBUG] No match in angle_-45 for Tx=27, Rx=32
+[DEBUG] No match in angle_-50 for Tx=27, Rx=32
+[DEBUG] No match in angle_-55 for Tx=27, Rx=32
+[DEBUG] No match in angle_-60 for Tx=27, Rx=32
+[DEBUG] No match in angle_-65 for Tx=27, Rx=32
+[DEBUG] No match in angle_20 for Tx=27, Rx=32
+[DEBUG] No match in angle_25 for Tx=27, Rx=32
+[DEBUG] No match in angle_30 for Tx=27, Rx=32
+[DEBUG] No match in angle_35 for Tx=27, Rx=32
+[DEBUG] No match in angle_40 for Tx=27, Rx=32
+[DEBUG] No match in angle_45 for Tx=27, Rx=32
+[DEBUG] No match in angle_50 for Tx=27, Rx=32
+[DEBUG] No match in angle_55 for Tx=27, Rx=32
+[DEBUG] No match in angle_60 for Tx=27, Rx=32
+[DEBUG] No match in angle_65 for Tx=27, Rx=32
+[INFO] File saved: snr_tx27_rx32_forward.csv
+[DEBUG] No match in angle_-20 for Tx=32, Rx=32
+[DEBUG] No match in angle_-25 for Tx=32, Rx=32
+[DEBUG] No match in angle_-30 for Tx=32, Rx=32
+[DEBUG] No match in angle_-35 for Tx=32, Rx=32
+[DEBUG] No match in angle_-40 for Tx=32, Rx=32
+[DEBUG] No match in angle_-45 for Tx=32, Rx=32
+[DEBUG] No match in angle_-50 for Tx=32, Rx=32
+[DEBUG] No match in angle_-55 for Tx=32, Rx=32
+[DEBUG] No match in angle_-60 for Tx=32, Rx=32
+[DEBUG] No match in angle_-65 for Tx=32, Rx=32
+[DEBUG] No match in angle_20 for Tx=32, Rx=32
+[DEBUG] No match in angle_25 for Tx=32, Rx=32
+[DEBUG] No match in angle_30 for Tx=32, Rx=32
+[DEBUG] No match in angle_35 for Tx=32, Rx=32
+[DEBUG] No match in angle_40 for Tx=32, Rx=32
+[DEBUG] No match in angle_45 for Tx=32, Rx=32
+[DEBUG] No match in angle_50 for Tx=32, Rx=32
+[DEBUG] No match in angle_55 for Tx=32, Rx=32
+[DEBUG] No match in angle_60 for Tx=32, Rx=32
+[DEBUG] No match in angle_65 for Tx=32, Rx=32
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-23 22:04:27] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:04:27] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-23 22:04:27] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:04:27] 
+[RUNNING] plot_ground_truth.py [2025-07-23 22:04:29] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-23 22:04:29] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:04:29] [INFO] Reference Max SNR (boresight ±30°) = 18.33 dB[2025-07-23 22:04:29] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:04:29] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-23 22:04:29] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:04:29] 
+[RUNNING] continuous_online_main_mavg.py --test_number QT_OAKD_MAVG12[2025-07-23 22:11:14] 
+--------------------------------------------------------------------------------------------------------------[2025-07-23 22:11:14] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=1[2025-07-23 22:11:14] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:11:14] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-07-23 22:11:14] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:11:14] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:11:14] 
+[STEP 2] Running Optimized Beam Sweep...[2025-07-23 22:11:14] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:11:14] 
+[RUNNING] optimized_beam_sweep.py [2025-07-23 22:19:42] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:19:42] 
+[STEP 3] Extracting Ground Truth Data...[2025-07-23 22:19:42] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:19:43] [INFO] Extraction complete.[2025-07-23 22:19:43] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 18.90 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+[DEBUG] No match in angle_-20 for Tx=27, Rx=32
+[DEBUG] No match in angle_-25 for Tx=27, Rx=32
+[DEBUG] No match in angle_-30 for Tx=27, Rx=32
+[DEBUG] No match in angle_-35 for Tx=27, Rx=32
+[DEBUG] No match in angle_-40 for Tx=27, Rx=32
+[DEBUG] No match in angle_-45 for Tx=27, Rx=32
+[DEBUG] No match in angle_-50 for Tx=27, Rx=32
+[DEBUG] No match in angle_-55 for Tx=27, Rx=32
+[DEBUG] No match in angle_-60 for Tx=27, Rx=32
+[DEBUG] No match in angle_-65 for Tx=27, Rx=32
+[DEBUG] No match in angle_20 for Tx=27, Rx=32
+[DEBUG] No match in angle_25 for Tx=27, Rx=32
+[DEBUG] No match in angle_30 for Tx=27, Rx=32
+[DEBUG] No match in angle_35 for Tx=27, Rx=32
+[DEBUG] No match in angle_40 for Tx=27, Rx=32
+[DEBUG] No match in angle_45 for Tx=27, Rx=32
+[DEBUG] No match in angle_50 for Tx=27, Rx=32
+[DEBUG] No match in angle_55 for Tx=27, Rx=32
+[DEBUG] No match in angle_60 for Tx=27, Rx=32
+[DEBUG] No match in angle_65 for Tx=27, Rx=32
+[INFO] File saved: snr_tx27_rx32_forward.csv
+[DEBUG] No match in angle_-20 for Tx=32, Rx=32
+[DEBUG] No match in angle_-25 for Tx=32, Rx=32
+[DEBUG] No match in angle_-30 for Tx=32, Rx=32
+[DEBUG] No match in angle_-35 for Tx=32, Rx=32
+[DEBUG] No match in angle_-40 for Tx=32, Rx=32
+[DEBUG] No match in angle_-45 for Tx=32, Rx=32
+[DEBUG] No match in angle_-50 for Tx=32, Rx=32
+[DEBUG] No match in angle_-55 for Tx=32, Rx=32
+[DEBUG] No match in angle_-60 for Tx=32, Rx=32
+[DEBUG] No match in angle_-65 for Tx=32, Rx=32
+[DEBUG] No match in angle_20 for Tx=32, Rx=32
+[DEBUG] No match in angle_25 for Tx=32, Rx=32
+[DEBUG] No match in angle_30 for Tx=32, Rx=32
+[DEBUG] No match in angle_35 for Tx=32, Rx=32
+[DEBUG] No match in angle_40 for Tx=32, Rx=32
+[DEBUG] No match in angle_45 for Tx=32, Rx=32
+[DEBUG] No match in angle_50 for Tx=32, Rx=32
+[DEBUG] No match in angle_55 for Tx=32, Rx=32
+[DEBUG] No match in angle_60 for Tx=32, Rx=32
+[DEBUG] No match in angle_65 for Tx=32, Rx=32
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-23 22:19:43] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:19:43] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-23 22:19:43] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:19:43] 
+[RUNNING] plot_ground_truth.py [2025-07-23 22:19:46] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-23 22:19:46] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:19:46] [INFO] Reference Max SNR (boresight ±30°) = 18.25 dB[2025-07-23 22:19:46] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:19:46] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-23 22:19:46] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:19:46] 
+[RUNNING] continuous_online_main_mavg.py --test_number QT_OAKD_MAVG13[2025-07-23 22:23:28] 
+--------------------------------------------------------------------------------------------------------------[2025-07-23 22:23:28] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=2[2025-07-23 22:23:28] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:23:28] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-07-23 22:23:28] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:23:28] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:23:28] 
+[STEP 2] Running Optimized Beam Sweep...[2025-07-23 22:23:28] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:23:28] 
+[RUNNING] optimized_beam_sweep.py [2025-07-23 22:31:57] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:31:57] 
+[STEP 3] Extracting Ground Truth Data...[2025-07-23 22:31:57] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:31:58] [INFO] Extraction complete.[2025-07-23 22:31:58] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 18.86 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+[DEBUG] No match in angle_-20 for Tx=27, Rx=32
+[DEBUG] No match in angle_-25 for Tx=27, Rx=32
+[DEBUG] No match in angle_-30 for Tx=27, Rx=32
+[DEBUG] No match in angle_-35 for Tx=27, Rx=32
+[DEBUG] No match in angle_-40 for Tx=27, Rx=32
+[DEBUG] No match in angle_-45 for Tx=27, Rx=32
+[DEBUG] No match in angle_-50 for Tx=27, Rx=32
+[DEBUG] No match in angle_-55 for Tx=27, Rx=32
+[DEBUG] No match in angle_-60 for Tx=27, Rx=32
+[DEBUG] No match in angle_-65 for Tx=27, Rx=32
+[DEBUG] No match in angle_20 for Tx=27, Rx=32
+[DEBUG] No match in angle_25 for Tx=27, Rx=32
+[DEBUG] No match in angle_30 for Tx=27, Rx=32
+[DEBUG] No match in angle_35 for Tx=27, Rx=32
+[DEBUG] No match in angle_40 for Tx=27, Rx=32
+[DEBUG] No match in angle_45 for Tx=27, Rx=32
+[DEBUG] No match in angle_50 for Tx=27, Rx=32
+[DEBUG] No match in angle_55 for Tx=27, Rx=32
+[DEBUG] No match in angle_60 for Tx=27, Rx=32
+[DEBUG] No match in angle_65 for Tx=27, Rx=32
+[INFO] File saved: snr_tx27_rx32_forward.csv
+[DEBUG] No match in angle_-20 for Tx=32, Rx=32
+[DEBUG] No match in angle_-25 for Tx=32, Rx=32
+[DEBUG] No match in angle_-30 for Tx=32, Rx=32
+[DEBUG] No match in angle_-35 for Tx=32, Rx=32
+[DEBUG] No match in angle_-40 for Tx=32, Rx=32
+[DEBUG] No match in angle_-45 for Tx=32, Rx=32
+[DEBUG] No match in angle_-50 for Tx=32, Rx=32
+[DEBUG] No match in angle_-55 for Tx=32, Rx=32
+[DEBUG] No match in angle_-60 for Tx=32, Rx=32
+[DEBUG] No match in angle_-65 for Tx=32, Rx=32
+[DEBUG] No match in angle_20 for Tx=32, Rx=32
+[DEBUG] No match in angle_25 for Tx=32, Rx=32
+[DEBUG] No match in angle_30 for Tx=32, Rx=32
+[DEBUG] No match in angle_35 for Tx=32, Rx=32
+[DEBUG] No match in angle_40 for Tx=32, Rx=32
+[DEBUG] No match in angle_45 for Tx=32, Rx=32
+[DEBUG] No match in angle_50 for Tx=32, Rx=32
+[DEBUG] No match in angle_55 for Tx=32, Rx=32
+[DEBUG] No match in angle_60 for Tx=32, Rx=32
+[DEBUG] No match in angle_65 for Tx=32, Rx=32
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-23 22:31:58] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:31:58] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-23 22:31:58] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:31:58] 
+[RUNNING] plot_ground_truth.py [2025-07-23 22:32:00] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-23 22:32:00] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:32:00] [INFO] Reference Max SNR (boresight ±30°) = 18.26 dB[2025-07-23 22:32:00] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:32:00] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-23 22:32:00] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:32:00] 
+[RUNNING] continuous_online_main_mavg.py --test_number QT_OAKD_MAVG14[2025-07-23 22:34:10] 
+--------------------------------------------------------------------------------------------------------------[2025-07-23 22:34:10] 
+[INFO] Running Adaptive Beamforming for SNR=0.95, RotorSpeed=4[2025-07-23 22:34:10] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:34:10] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-07-23 22:34:10] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:34:10] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:34:10] 
+[STEP 2] Running Optimized Beam Sweep...[2025-07-23 22:34:10] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:34:10] 
+[RUNNING] optimized_beam_sweep.py [2025-07-23 22:42:39] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:42:39] 
+[STEP 3] Extracting Ground Truth Data...[2025-07-23 22:42:39] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:42:40] [INFO] Extraction complete.[2025-07-23 22:42:40] Step 1: Extracting all SNR values...
+Step 1.1: Computing quantile-based SNR threshold...
+[INFO] Updated quantile-based SNR threshold: 18.93 dB (quantile = 0.95)
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+[DEBUG] No match in angle_-20 for Tx=27, Rx=32
+[DEBUG] No match in angle_-25 for Tx=27, Rx=32
+[DEBUG] No match in angle_-30 for Tx=27, Rx=32
+[DEBUG] No match in angle_-35 for Tx=27, Rx=32
+[DEBUG] No match in angle_-40 for Tx=27, Rx=32
+[DEBUG] No match in angle_-45 for Tx=27, Rx=32
+[DEBUG] No match in angle_-50 for Tx=27, Rx=32
+[DEBUG] No match in angle_-55 for Tx=27, Rx=32
+[DEBUG] No match in angle_-60 for Tx=27, Rx=32
+[DEBUG] No match in angle_-65 for Tx=27, Rx=32
+[DEBUG] No match in angle_20 for Tx=27, Rx=32
+[DEBUG] No match in angle_25 for Tx=27, Rx=32
+[DEBUG] No match in angle_30 for Tx=27, Rx=32
+[DEBUG] No match in angle_35 for Tx=27, Rx=32
+[DEBUG] No match in angle_40 for Tx=27, Rx=32
+[DEBUG] No match in angle_45 for Tx=27, Rx=32
+[DEBUG] No match in angle_50 for Tx=27, Rx=32
+[DEBUG] No match in angle_55 for Tx=27, Rx=32
+[DEBUG] No match in angle_60 for Tx=27, Rx=32
+[DEBUG] No match in angle_65 for Tx=27, Rx=32
+[INFO] File saved: snr_tx27_rx32_forward.csv
+[DEBUG] No match in angle_-20 for Tx=32, Rx=32
+[DEBUG] No match in angle_-25 for Tx=32, Rx=32
+[DEBUG] No match in angle_-30 for Tx=32, Rx=32
+[DEBUG] No match in angle_-35 for Tx=32, Rx=32
+[DEBUG] No match in angle_-40 for Tx=32, Rx=32
+[DEBUG] No match in angle_-45 for Tx=32, Rx=32
+[DEBUG] No match in angle_-50 for Tx=32, Rx=32
+[DEBUG] No match in angle_-55 for Tx=32, Rx=32
+[DEBUG] No match in angle_-60 for Tx=32, Rx=32
+[DEBUG] No match in angle_-65 for Tx=32, Rx=32
+[DEBUG] No match in angle_20 for Tx=32, Rx=32
+[DEBUG] No match in angle_25 for Tx=32, Rx=32
+[DEBUG] No match in angle_30 for Tx=32, Rx=32
+[DEBUG] No match in angle_35 for Tx=32, Rx=32
+[DEBUG] No match in angle_40 for Tx=32, Rx=32
+[DEBUG] No match in angle_45 for Tx=32, Rx=32
+[DEBUG] No match in angle_50 for Tx=32, Rx=32
+[DEBUG] No match in angle_55 for Tx=32, Rx=32
+[DEBUG] No match in angle_60 for Tx=32, Rx=32
+[DEBUG] No match in angle_65 for Tx=32, Rx=32
+[INFO] File saved: snr_tx32_rx32_forward.csv
+All data extraction steps completed.
+[2025-07-23 22:42:40] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:42:40] 
+[STEP 4] Plotting Ground Truth Results...[2025-07-23 22:42:40] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:42:40] 
+[RUNNING] plot_ground_truth.py [2025-07-23 22:42:42] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-07-23 22:42:42] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:42:42] [INFO] Reference Max SNR (boresight ±30°) = 18.38 dB[2025-07-23 22:42:42] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:42:42] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-07-23 22:42:42] ----------------------------------------------------------------------------------------------------------[2025-07-23 22:42:42] 
+[RUNNING] continuous_online_main_mavg.py --test_number QT_OAKD_MAVG15[2025-07-23 22:44:09] 
+--------------------------------------------------------------------------------------------------------------[2025-07-23 22:44:09] 
+[LOG] Automatic evaluation pipeline completed at[2025-07-23 22:44:09] 2025-07-23 22:44:09[2025-07-23 22:44:09] [LOG] Total execution time: 4169.83 seconds (69.50 minutes)

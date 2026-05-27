@@ -1,0 +1,10 @@
+Experiment,SNR Threshold (dB),Rotor Speed,Algorithm,Total Samples After Balancing,Outage Probability,Average Beamforming Time (s)
+nh_dec22_gain8db_3m_online_5G2,14.89,1deg/sec,5G NR Adaptive Beamforming,7,0.9090909090909092,7.903103726250785
+nh_dec22_gain8db_3m_online_5G3,14.87,4deg/sec,5G NR Adaptive Beamforming,2,1.0,7.87969172000885
+nh_dec22_gain8db_3m_online_5G4,17.42,0.25deg/sec,5G NR Adaptive Beamforming,28,0.5454545454545454,7.908550160271781
+nh_dec22_gain8db_3m_online_5G5,17.18,1deg/sec,5G NR Adaptive Beamforming,7,0.9272727272727272,7.90319858278547
+nh_dec22_gain8db_3m_online_5G6,17.55,4deg/sec,5G NR Adaptive Beamforming,2,1.0,7.877136468887329
+nh_dec22_gain8db_3m_online_5G7,18.78,0.25deg/sec,5G NR Adaptive Beamforming,28,0.6181818181818182,7.904007196426392
+nh_dec22_gain8db_3m_online_5G8,18.53,1deg/sec,5G NR Adaptive Beamforming,7,0.9636363636363636,7.903379304068429
+nh_dec22_gain8db_3m_online_5G9,18.51,4deg/sec,5G NR Adaptive Beamforming,2,1.0,7.880060076713562
+nh_dec22_gain8db_3m_online_5G1,17.49,0.25deg/sec,5G NR Adaptive Beamforming,28,0.5454545454545454,7.90512205021722

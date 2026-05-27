@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Look Once, Beam Twice: Camera-Primed Real-Time Double-Directional mmWave Beam Management for Vehicular Connectivity"
+authors:
+  - family-names: "Biswas"
+    given-names: "Avhishek"
+    affiliation: "School of Computing, University of Nebraska–Lincoln"
+    email: "abiswas3@huskers.unl.edu"
+  - family-names: "Pramanik"
+    given-names: "Apala"
+    affiliation: "School of Computing, University of Nebraska–Lincoln"
+    email: "apramanik2@huskers.unl.edu"
+  - family-names: "Ekici"
+    given-names: "Eylem"
+    affiliation: "Electrical and Computer Engineering, The Ohio State University"
+    email: "ekici.2@osu.edu"
+  - family-names: "Vuran"
+    given-names: "Mehmet C."
+    affiliation: "School of Computing, University of Nebraska–Lincoln"
+    email: "mcv@unl.edu"
+repository-code: "https://github.com/UNL-CPN-Lab/Look-Once-Beam-Twice"
+license: MIT
+keywords:
+  - mmWave
+  - 6G
+  - beamforming
+  - V2X
+  - vehicular communication
+  - computer vision
+  - YOLO
+  - SDR
+preferred-citation:
+  type: conference-paper
+  title: "Look Once, Beam Twice: Camera-Primed Real-Time Double-Directional mmWave Beam Management for Vehicular Connectivity"
+  authors:
+    - family-names: "Biswas"
+      given-names: "Avhishek"
+    - family-names: "Pramanik"
+      given-names: "Apala"
+    - family-names: "Ekici"
+      given-names: "Eylem"
+    - family-names: "Vuran"
+      given-names: "Mehmet C."
+  collection-title: "Proc. IEEE International Conference on Sensing, Communication, and Networking (SECON)"
+  year: 2026
+notes: "Avhishek Biswas and Apala Pramanik contributed equally to this work."

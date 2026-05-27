@@ -1,0 +1,15 @@
+{
+    "experiment_name": "nh_jul14_gain9db_12db_16m_t12",
+    "experiment_directory": "Outdoor_Adaptive_Beamforming_SC/mavg_Results/nh_jul14_gain9db_12db_16m_t12",
+    "timestamp": "2025-07-14 08:03:04",
+    "location": "nh",
+    "gain": "9db_12db",
+    "distance": "16m",
+    "test_number": "t12",
+    "sample_size": 2000,
+    "padding": 100,
+    "car_speed": "8 mph",
+    "Threshold": "14 dB",
+    "Threshold Quantile": "0.8",
+    "Algorithm": "Adaptive Beamforming + Mavg"
+}

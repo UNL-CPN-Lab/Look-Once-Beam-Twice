@@ -1,0 +1,608 @@
+[2025-06-18 17:35:47] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 17:35:47] 2025-06-18 17:35:47[2025-06-18 17:35:47] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 17:35:47] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-18 17:35:47] 
+[RUNNING] optimized_beam_sweep.py [2025-06-18 17:40:56] Traceback (most recent call last):
+[2025-06-18 17:40:56] Traceback (most recent call last):
+[2025-06-18 17:40:56]   File "automatic.py", line 162, in <module>
+[2025-06-18 17:40:56]   File "automatic.py", line 162, in <module>
+[2025-06-18 17:40:56] main()[2025-06-18 17:40:56]   File "automatic.py", line 115, in main
+[2025-06-18 17:40:56] main()[2025-06-18 17:40:56]   File "automatic.py", line 115, in main
+[2025-06-18 17:40:56] run_python(GROUND_SWEEP_SCRIPT)[2025-06-18 17:40:56]   File "automatic.py", line 99, in run_python
+[2025-06-18 17:40:56] run_python(GROUND_SWEEP_SCRIPT)[2025-06-18 17:40:56]   File "automatic.py", line 99, in run_python
+[2025-06-18 17:40:56] subprocess.run(cmd, check=True)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-18 17:40:56] subprocess.run(cmd, check=True)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-18 17:40:56] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-18 17:40:56] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-18 17:40:56] self.wait()[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-18 17:40:56] self.wait()[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-18 17:40:56] return self._wait(timeout=timeout)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-18 17:40:56] return self._wait(timeout=timeout)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-18 17:40:56] (pid, sts) = self._try_wait(0)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-18 17:40:56] (pid, sts) = self._try_wait(0)[2025-06-18 17:40:56]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-18 17:40:56] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-18 17:40:56] KeyboardInterrupt[2025-06-18 17:40:56] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-18 17:40:56] KeyboardInterrupt[2025-06-18 18:04:53] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:04:53] 2025-06-18 18:04:53[2025-06-18 18:04:53] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:04:53] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-18 18:04:53] 
+[RUNNING] optimized_beam_sweep.py [2025-06-18 18:07:20] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:07:21] [ERROR] Extraction failed:[2025-06-18 18:07:21] Traceback (most recent call last):
+  File "run_ground_truth_data_extraction.py", line 69, in <module>
+    df_all.to_csv(os.path.join(base_dir, "forward_all_snr_data.csv"), index=False)
+NameError: name 'df_all' is not defined
+[2025-06-18 18:07:21] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:07:21] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:07:22] Traceback (most recent call last):
+[2025-06-18 18:07:22] Traceback (most recent call last):
+[2025-06-18 18:07:22]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:07:22]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:07:22] main()[2025-06-18 18:07:22]   File "automatic.py", line 134, in main
+[2025-06-18 18:07:22] main()[2025-06-18 18:07:22]   File "automatic.py", line 134, in main
+[2025-06-18 18:07:22] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:07:22]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:07:22] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:07:22]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:07:22] subprocess.run(cmd, check=True)[2025-06-18 18:07:22]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:07:22] subprocess.run(cmd, check=True)[2025-06-18 18:07:22]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:07:22] raise CalledProcessError(retcode, process.args,[2025-06-18 18:07:22] subprocess[2025-06-18 18:07:22] .[2025-06-18 18:07:22] CalledProcessError[2025-06-18 18:07:22] : [2025-06-18 18:07:22] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:07:22] raise CalledProcessError(retcode, process.args,[2025-06-18 18:07:22] subprocess[2025-06-18 18:07:22] .[2025-06-18 18:07:22] CalledProcessError[2025-06-18 18:07:22] : [2025-06-18 18:07:22] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:12:06] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:12:06] 2025-06-18 18:12:06[2025-06-18 18:12:06] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:12:06] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:12:06] [ERROR] Extraction failed:[2025-06-18 18:12:06] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:12:06] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:12:07] Traceback (most recent call last):
+[2025-06-18 18:12:07] Traceback (most recent call last):
+[2025-06-18 18:12:07]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:12:07]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:12:07] main()[2025-06-18 18:12:07]   File "automatic.py", line 134, in main
+[2025-06-18 18:12:07] main()[2025-06-18 18:12:07]   File "automatic.py", line 134, in main
+[2025-06-18 18:12:07] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:12:07]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:12:07] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:12:07]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:12:07] subprocess.run(cmd, check=True)[2025-06-18 18:12:07]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:12:07] subprocess.run(cmd, check=True)[2025-06-18 18:12:07]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:12:07] raise CalledProcessError(retcode, process.args,[2025-06-18 18:12:07] subprocess[2025-06-18 18:12:07] .[2025-06-18 18:12:07] CalledProcessError[2025-06-18 18:12:07] : [2025-06-18 18:12:07] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:12:07] raise CalledProcessError(retcode, process.args,[2025-06-18 18:12:07] subprocess[2025-06-18 18:12:07] .[2025-06-18 18:12:07] CalledProcessError[2025-06-18 18:12:07] : [2025-06-18 18:12:07] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:13:07] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:13:07] 2025-06-18 18:13:07[2025-06-18 18:13:07] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:13:07] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:13:07] [ERROR] Extraction failed:[2025-06-18 18:13:07] Traceback (most recent call last):
+  File "run_ground_truth_data_extraction.py", line 89, in <module>
+    df.columns = ["Tx Beam Index", "Tx Beam Angle", "Rx Beam Index", "Rx Beam Angle", "SNR (dB)"]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/internals/base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 6 elements, new values have 5 elements
+[2025-06-18 18:13:07] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:13:07] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:13:08] Traceback (most recent call last):
+[2025-06-18 18:13:08] Traceback (most recent call last):
+[2025-06-18 18:13:08]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:13:08]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:13:08] main()[2025-06-18 18:13:08]   File "automatic.py", line 134, in main
+[2025-06-18 18:13:08] main()[2025-06-18 18:13:08]   File "automatic.py", line 134, in main
+[2025-06-18 18:13:08] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:13:08]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:13:08] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:13:08]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:13:08] subprocess.run(cmd, check=True)[2025-06-18 18:13:08]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:13:08] subprocess.run(cmd, check=True)[2025-06-18 18:13:08]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:13:08] raise CalledProcessError(retcode, process.args,[2025-06-18 18:13:08] subprocess[2025-06-18 18:13:08] .[2025-06-18 18:13:08] CalledProcessError[2025-06-18 18:13:08] : [2025-06-18 18:13:08] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:13:08] raise CalledProcessError(retcode, process.args,[2025-06-18 18:13:08] subprocess[2025-06-18 18:13:08] .[2025-06-18 18:13:08] CalledProcessError[2025-06-18 18:13:08] : [2025-06-18 18:13:08] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:14:07] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:14:07] 2025-06-18 18:14:07[2025-06-18 18:14:07] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:14:07] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:14:07] [ERROR] Extraction failed:[2025-06-18 18:14:07] Traceback (most recent call last):
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 934, in _finalize_columns_and_data
+    columns = _validate_or_indexify_columns(contents, columns)
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 981, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 6 columns passed, passed data had 4 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_ground_truth_data_extraction.py", line 92, in <module>
+    df_max = pd.DataFrame(max_snr_data, columns=["Boresight", "Tx Beam Index", "Tx Beam Angle", "Rx Beam Index", "Rx Beam Angle", "SNR (dB)"])
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 782, in __init__
+    arrays, columns, index = nested_data_to_arrays(
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 498, in nested_data_to_arrays
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 840, in to_arrays
+    content, columns = _finalize_columns_and_data(arr, columns, dtype)
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 937, in _finalize_columns_and_data
+    raise ValueError(err) from err
+ValueError: 6 columns passed, passed data had 4 columns
+[2025-06-18 18:14:07] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:14:07] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:14:08] Traceback (most recent call last):
+[2025-06-18 18:14:08] Traceback (most recent call last):
+[2025-06-18 18:14:08]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:14:08]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:14:08] main()[2025-06-18 18:14:08]   File "automatic.py", line 134, in main
+[2025-06-18 18:14:08] main()[2025-06-18 18:14:08]   File "automatic.py", line 134, in main
+[2025-06-18 18:14:08] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:14:08]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:14:08] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:14:08]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:14:08] subprocess.run(cmd, check=True)[2025-06-18 18:14:08]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:14:08] subprocess.run(cmd, check=True)[2025-06-18 18:14:08]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:14:08] raise CalledProcessError(retcode, process.args,[2025-06-18 18:14:08] subprocess[2025-06-18 18:14:08] .[2025-06-18 18:14:08] CalledProcessError[2025-06-18 18:14:08] : [2025-06-18 18:14:08] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:14:08] raise CalledProcessError(retcode, process.args,[2025-06-18 18:14:08] subprocess[2025-06-18 18:14:08] .[2025-06-18 18:14:08] CalledProcessError[2025-06-18 18:14:08] : [2025-06-18 18:14:08] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:15:48] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:15:48] 2025-06-18 18:15:48[2025-06-18 18:15:48] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:15:48] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:15:49] [INFO] Extraction complete.[2025-06-18 18:15:49] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 30.0
+Step 4: Extracting best Rx beam for Tx = 30.0
+Step 5: Extracting Tx=30.0°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-18 18:15:49] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:15:49] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:15:50] Traceback (most recent call last):
+[2025-06-18 18:15:50] Traceback (most recent call last):
+[2025-06-18 18:15:50]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:15:50]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:15:50] main()[2025-06-18 18:15:50]   File "automatic.py", line 134, in main
+[2025-06-18 18:15:50] main()[2025-06-18 18:15:50]   File "automatic.py", line 134, in main
+[2025-06-18 18:15:50] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:15:50]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:15:50] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:15:50]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:15:50] subprocess.run(cmd, check=True)[2025-06-18 18:15:50]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:15:50] subprocess.run(cmd, check=True)[2025-06-18 18:15:50]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:15:50] raise CalledProcessError(retcode, process.args,[2025-06-18 18:15:50] subprocess[2025-06-18 18:15:50] .[2025-06-18 18:15:50] CalledProcessError[2025-06-18 18:15:50] : [2025-06-18 18:15:50] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:15:50] raise CalledProcessError(retcode, process.args,[2025-06-18 18:15:50] subprocess[2025-06-18 18:15:50] .[2025-06-18 18:15:50] CalledProcessError[2025-06-18 18:15:50] : [2025-06-18 18:15:50] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:19:53] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:19:53] 2025-06-18 18:19:53[2025-06-18 18:19:53] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:19:53] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:19:53] [INFO] Extraction complete.[2025-06-18 18:19:53] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 30
+Step 4: Extracting best Rx beam for Tx = 30
+Step 5: Extracting Tx=30°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-18 18:19:53] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:19:53] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:19:55] Traceback (most recent call last):
+[2025-06-18 18:19:55] Traceback (most recent call last):
+[2025-06-18 18:19:55]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:19:55]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:19:55] main()[2025-06-18 18:19:55]   File "automatic.py", line 134, in main
+[2025-06-18 18:19:55] main()[2025-06-18 18:19:55]   File "automatic.py", line 134, in main
+[2025-06-18 18:19:55] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:19:55]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:19:55] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-18 18:19:55]   File "automatic.py", line 99, in run_python
+[2025-06-18 18:19:55] subprocess.run(cmd, check=True)[2025-06-18 18:19:55]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:19:55] subprocess.run(cmd, check=True)[2025-06-18 18:19:55]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-18 18:19:55] raise CalledProcessError(retcode, process.args,[2025-06-18 18:19:55] subprocess[2025-06-18 18:19:55] .[2025-06-18 18:19:55] CalledProcessError[2025-06-18 18:19:55] : [2025-06-18 18:19:55] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:19:55] raise CalledProcessError(retcode, process.args,[2025-06-18 18:19:55] subprocess[2025-06-18 18:19:55] .[2025-06-18 18:19:55] CalledProcessError[2025-06-18 18:19:55] : [2025-06-18 18:19:55] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-18 18:20:33] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:20:33] 2025-06-18 18:20:33[2025-06-18 18:20:33] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:20:33] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:20:34] [INFO] Extraction complete.[2025-06-18 18:20:34] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 30
+Step 4: Extracting best Rx beam for Tx = 30
+Step 5: Extracting Tx=30°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-18 18:20:34] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:20:34] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:20:35] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-06-18 18:20:35] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:20:35] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 18:20:35] 2025-06-18 18:20:35[2025-06-18 18:20:35] [LOG] Total execution time: 2.17 seconds (0.04 minutes)[2025-06-18 18:22:58] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:22:58] 2025-06-18 18:22:58[2025-06-18 18:22:58] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:22:58] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-18 18:22:58] [INFO] Extraction complete.[2025-06-18 18:22:58] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 30
+Step 4: Extracting best Rx beam for Tx = 30
+Step 5: Extracting Tx=30°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-18 18:22:58] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:22:58] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:23:00] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-06-18 18:23:00] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:23:00] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 18:23:00] 2025-06-18 18:23:00[2025-06-18 18:23:00] [LOG] Total execution time: 2.14 seconds (0.04 minutes)[2025-06-18 18:30:43] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:30:43] 2025-06-18 18:30:43[2025-06-18 18:30:43] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:30:43] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-06-18 18:30:43] Traceback (most recent call last):
+[2025-06-18 18:30:43] Traceback (most recent call last):
+[2025-06-18 18:30:43]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:30:43]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:30:43] main()[2025-06-18 18:30:43]   File "automatic.py", line 137, in main
+[2025-06-18 18:30:43] main()[2025-06-18 18:30:43]   File "automatic.py", line 137, in main
+[2025-06-18 18:30:43] csv_path = os.path.join(os.environ["GROUND_TRUTH_PATH"], "forward_max_snr_per_angle.csv")[2025-06-18 18:30:43]   File "/usr/lib/python3.8/os.py", line 675, in __getitem__
+[2025-06-18 18:30:43] csv_path = os.path.join(os.environ["GROUND_TRUTH_PATH"], "forward_max_snr_per_angle.csv")[2025-06-18 18:30:43]   File "/usr/lib/python3.8/os.py", line 675, in __getitem__
+[2025-06-18 18:30:43] raise KeyError(key) from None[2025-06-18 18:30:43] KeyError[2025-06-18 18:30:43] : [2025-06-18 18:30:43] 'GROUND_TRUTH_PATH'[2025-06-18 18:30:43] raise KeyError(key) from None[2025-06-18 18:30:43] KeyError[2025-06-18 18:30:43] : [2025-06-18 18:30:43] 'GROUND_TRUTH_PATH'[2025-06-18 18:31:29] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:31:29] 2025-06-18 18:31:29[2025-06-18 18:31:29] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:31:29] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-06-18 18:31:29] Traceback (most recent call last):
+[2025-06-18 18:31:29] Traceback (most recent call last):
+[2025-06-18 18:31:29]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:31:29]   File "automatic.py", line 162, in <module>
+[2025-06-18 18:31:29] main()[2025-06-18 18:31:29]   File "automatic.py", line 137, in main
+[2025-06-18 18:31:29] main()[2025-06-18 18:31:29]   File "automatic.py", line 137, in main
+[2025-06-18 18:31:29] csv_path = os.path.join(os.environ["GROUND_TRUTH_PATH"], "forward_max_snr_per_angle.csv")[2025-06-18 18:31:29]   File "/usr/lib/python3.8/os.py", line 675, in __getitem__
+[2025-06-18 18:31:29] csv_path = os.path.join(os.environ["GROUND_TRUTH_PATH"], "forward_max_snr_per_angle.csv")[2025-06-18 18:31:29]   File "/usr/lib/python3.8/os.py", line 675, in __getitem__
+[2025-06-18 18:31:29] raise KeyError(key) from None[2025-06-18 18:31:29] KeyError[2025-06-18 18:31:29] : [2025-06-18 18:31:29] 'GROUND_TRUTH_PATH'[2025-06-18 18:31:29] raise KeyError(key) from None[2025-06-18 18:31:29] KeyError[2025-06-18 18:31:29] : [2025-06-18 18:31:29] 'GROUND_TRUTH_PATH'[2025-06-18 18:32:02] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:32:02] 2025-06-18 18:32:02[2025-06-18 18:32:02] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:32:02] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:32:02] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:32:04] 
+[STEP 5] Updating Reference Max SNR from Ground Truth CSV...[2025-06-18 18:32:04] [INFO] Reference Max SNR (boresight ±30°) = 36.23 dB[2025-06-18 18:32:04] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:32:04] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 18:32:04] 2025-06-18 18:32:04[2025-06-18 18:32:04] [LOG] Total execution time: 1.78 seconds (0.03 minutes)[2025-06-18 18:32:32] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:32:32] 2025-06-18 18:32:32[2025-06-18 18:32:32] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:32:32] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:32:32] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:32:34] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:32:34] 
+[INFO] Running Adaptive Beamforming for SNR=0.4, RotorSpeed=1[2025-06-18 18:32:34] 
+[RUNNING] online_main_basic.py --test_number t1[2025-06-18 18:34:44] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 18:34:44] 2025-06-18 18:34:44[2025-06-18 18:34:44] [LOG] Total execution time: 131.63 seconds (2.19 minutes)[2025-06-18 18:40:18] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:40:18] 2025-06-18 18:40:18[2025-06-18 18:40:18] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:40:18] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:40:18] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:40:20] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:40:20] 
+[INFO] Running Adaptive Beamforming for SNR=0.4, RotorSpeed=1[2025-06-18 18:40:20] 
+[RUNNING] online_main_basic.py --test_number t1[2025-06-18 18:42:30] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 18:42:30] 2025-06-18 18:42:30[2025-06-18 18:42:30] [LOG] Total execution time: 131.83 seconds (2.20 minutes)[2025-06-18 18:44:07] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:44:07] 2025-06-18 18:44:07[2025-06-18 18:44:07] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:44:07] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:44:07] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:44:09] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:44:09] 
+[INFO] Running Adaptive Beamforming for SNR=0.4, RotorSpeed=1[2025-06-18 18:44:09] 
+[RUNNING] online_main_basic.py --test_number t1[2025-06-18 18:46:19] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 18:46:19] 2025-06-18 18:46:19[2025-06-18 18:46:19] [LOG] Total execution time: 132.32 seconds (2.21 minutes)[2025-06-18 18:51:30] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:51:30] 2025-06-18 18:51:30[2025-06-18 18:51:30] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:51:30] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:51:30] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:51:32] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:51:32] 
+[INFO] Running Adaptive Beamforming for SNR=0.4, RotorSpeed=1[2025-06-18 18:51:32] 
+[RUNNING] online_main_basic_new.py --test_number t1[2025-06-18 18:53:42] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 18:53:42] 2025-06-18 18:53:42[2025-06-18 18:53:42] [LOG] Total execution time: 131.87 seconds (2.20 minutes)[2025-06-18 18:59:15] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 18:59:15] 2025-06-18 18:59:15[2025-06-18 18:59:15] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 18:59:15] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 18:59:15] 
+[RUNNING] plot_ground_truth.py [2025-06-18 18:59:16] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 18:59:16] 
+[INFO] Running Adaptive Beamforming for SNR=0.4, RotorSpeed=1[2025-06-18 18:59:16] 
+[RUNNING] online_main_basic_new.py --test_number t1[2025-06-18 19:01:27] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 19:01:27] 2025-06-18 19:01:27[2025-06-18 19:01:27] [LOG] Total execution time: 131.90 seconds (2.20 minutes)[2025-06-18 19:03:03] 
+[LOG] Automatic evaluation pipeline started at[2025-06-18 19:03:03] 2025-06-18 19:03:03[2025-06-18 19:03:03] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-18 19:03:03] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-18 19:03:03] 
+[RUNNING] plot_ground_truth.py [2025-06-18 19:03:04] 
+[STEP 6] Running Adaptive Beamforming Experiments...[2025-06-18 19:03:04] 
+[INFO] Running Adaptive Beamforming for SNR=0.4, RotorSpeed=1[2025-06-18 19:03:04] 
+[RUNNING] online_main_basic_new.py --test_number t1[2025-06-18 19:05:18] 
+[LOG] Automatic evaluation pipeline completed at[2025-06-18 19:05:18] 2025-06-18 19:05:18[2025-06-18 19:05:18] [LOG] Total execution time: 135.29 seconds (2.25 minutes)[2025-06-20 13:44:10] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 13:44:10] 2025-06-20 13:44:10[2025-06-20 13:44:10] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 13:44:10] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 13:44:10] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 13:44:11] Traceback (most recent call last):
+[2025-06-20 13:44:11] Traceback (most recent call last):
+[2025-06-20 13:44:11]   File "automatic.py", line 162, in <module>
+[2025-06-20 13:44:11]   File "automatic.py", line 162, in <module>
+[2025-06-20 13:44:11] main()[2025-06-20 13:44:11]   File "automatic.py", line 115, in main
+[2025-06-20 13:44:11] main()[2025-06-20 13:44:11]   File "automatic.py", line 115, in main
+[2025-06-20 13:44:11] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 13:44:11]   File "automatic.py", line 99, in run_python
+[2025-06-20 13:44:11] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 13:44:11]   File "automatic.py", line 99, in run_python
+[2025-06-20 13:44:11] subprocess.run(cmd, check=True)[2025-06-20 13:44:11]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 13:44:11] subprocess.run(cmd, check=True)[2025-06-20 13:44:11]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 13:44:11] raise CalledProcessError(retcode, process.args,[2025-06-20 13:44:11] subprocess[2025-06-20 13:44:11] .[2025-06-20 13:44:11] CalledProcessError[2025-06-20 13:44:11] : [2025-06-20 13:44:11] Command '['python3', 'optimized_beam_sweep.py']' returned non-zero exit status 1.[2025-06-20 13:44:11] raise CalledProcessError(retcode, process.args,[2025-06-20 13:44:11] subprocess[2025-06-20 13:44:11] .[2025-06-20 13:44:11] CalledProcessError[2025-06-20 13:44:11] : [2025-06-20 13:44:11] Command '['python3', 'optimized_beam_sweep.py']' returned non-zero exit status 1.[2025-06-20 13:45:14] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 13:45:14] 2025-06-20 13:45:14[2025-06-20 13:45:14] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 13:45:14] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 13:45:14] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 13:47:56] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 13:47:56] [INFO] Extraction complete.[2025-06-20 13:47:56] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 32
+Step 4: Extracting best Rx beam for Tx = 32
+Step 5: Extracting Tx=32°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-20 13:47:56] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 13:47:56] 
+[RUNNING] plot_ground_truth.py [2025-06-20 13:47:58] Traceback (most recent call last):
+[2025-06-20 13:47:58] Traceback (most recent call last):
+[2025-06-20 13:47:58]   File "automatic.py", line 162, in <module>
+[2025-06-20 13:47:58]   File "automatic.py", line 162, in <module>
+[2025-06-20 13:47:58] main()[2025-06-20 13:47:58]   File "automatic.py", line 134, in main
+[2025-06-20 13:47:58] main()[2025-06-20 13:47:58]   File "automatic.py", line 134, in main
+[2025-06-20 13:47:58] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 13:47:58]   File "automatic.py", line 99, in run_python
+[2025-06-20 13:47:58] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 13:47:58]   File "automatic.py", line 99, in run_python
+[2025-06-20 13:47:58] subprocess.run(cmd, check=True)[2025-06-20 13:47:58]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 13:47:58] subprocess.run(cmd, check=True)[2025-06-20 13:47:58]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 13:47:58] raise CalledProcessError(retcode, process.args,[2025-06-20 13:47:58] subprocess[2025-06-20 13:47:58] .[2025-06-20 13:47:58] CalledProcessError[2025-06-20 13:47:58] : [2025-06-20 13:47:58] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 13:47:58] raise CalledProcessError(retcode, process.args,[2025-06-20 13:47:58] subprocess[2025-06-20 13:47:58] .[2025-06-20 13:47:58] CalledProcessError[2025-06-20 13:47:58] : [2025-06-20 13:47:58] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 13:56:23] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 13:56:23] 2025-06-20 13:56:23[2025-06-20 13:56:23] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 13:56:23] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 13:56:23] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 13:59:04] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 13:59:05] [ERROR] Extraction failed:[2025-06-20 13:59:05] Traceback (most recent call last):
+  File "run_ground_truth_data_extraction.py", line 92, in <module>
+    max_row = df.loc[df["SNR (dB)"].idxmax()]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/series.py", line 2531, in idxmax
+    i = self.argmax(axis, skipna, *args, **kwargs)  # type: ignore[arg-type]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/base.py", line 678, in argmax
+    return nanops.nanargmax(  # type: ignore[return-value]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/nanops.py", line 91, in _f
+    raise TypeError(
+TypeError: reduction operation 'argmax' not allowed for this dtype
+[2025-06-20 13:59:05] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 13:59:05] 
+[RUNNING] plot_ground_truth.py [2025-06-20 13:59:06] Traceback (most recent call last):
+[2025-06-20 13:59:06] Traceback (most recent call last):
+[2025-06-20 13:59:06]   File "automatic.py", line 162, in <module>
+[2025-06-20 13:59:06]   File "automatic.py", line 162, in <module>
+[2025-06-20 13:59:06] main()[2025-06-20 13:59:06]   File "automatic.py", line 134, in main
+[2025-06-20 13:59:06] main()[2025-06-20 13:59:06]   File "automatic.py", line 134, in main
+[2025-06-20 13:59:06] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 13:59:06]   File "automatic.py", line 99, in run_python
+[2025-06-20 13:59:06] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 13:59:06]   File "automatic.py", line 99, in run_python
+[2025-06-20 13:59:06] subprocess.run(cmd, check=True)[2025-06-20 13:59:06]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 13:59:06] subprocess.run(cmd, check=True)[2025-06-20 13:59:06]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 13:59:06] raise CalledProcessError(retcode, process.args,[2025-06-20 13:59:06] subprocess[2025-06-20 13:59:06] .[2025-06-20 13:59:06] CalledProcessError[2025-06-20 13:59:06] : [2025-06-20 13:59:06] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 13:59:06] raise CalledProcessError(retcode, process.args,[2025-06-20 13:59:06] subprocess[2025-06-20 13:59:06] .[2025-06-20 13:59:06] CalledProcessError[2025-06-20 13:59:06] : [2025-06-20 13:59:06] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:02:29] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:02:29] 2025-06-20 14:02:29[2025-06-20 14:02:29] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:02:29] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:02:29] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 14:05:10] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:05:11] [ERROR] Extraction failed:[2025-06-20 14:05:11] Traceback (most recent call last):
+  File "run_ground_truth_data_extraction.py", line 92, in <module>
+    max_row = df.loc[df["SNR (dB)"].idxmax()]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/series.py", line 2531, in idxmax
+    i = self.argmax(axis, skipna, *args, **kwargs)  # type: ignore[arg-type]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/base.py", line 678, in argmax
+    return nanops.nanargmax(  # type: ignore[return-value]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/nanops.py", line 91, in _f
+    raise TypeError(
+TypeError: reduction operation 'argmax' not allowed for this dtype
+[2025-06-20 14:05:11] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:05:11] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:05:12] Traceback (most recent call last):
+[2025-06-20 14:05:12] Traceback (most recent call last):
+[2025-06-20 14:05:12]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:05:12]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:05:12] main()[2025-06-20 14:05:12]   File "automatic.py", line 134, in main
+[2025-06-20 14:05:12] main()[2025-06-20 14:05:12]   File "automatic.py", line 134, in main
+[2025-06-20 14:05:12] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:05:12]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:05:12] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:05:12]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:05:12] subprocess.run(cmd, check=True)[2025-06-20 14:05:12]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:05:12] subprocess.run(cmd, check=True)[2025-06-20 14:05:12]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:05:12] raise CalledProcessError(retcode, process.args,[2025-06-20 14:05:12] subprocess[2025-06-20 14:05:12] .[2025-06-20 14:05:12] CalledProcessError[2025-06-20 14:05:12] : [2025-06-20 14:05:12] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:05:12] raise CalledProcessError(retcode, process.args,[2025-06-20 14:05:12] subprocess[2025-06-20 14:05:12] .[2025-06-20 14:05:12] CalledProcessError[2025-06-20 14:05:12] : [2025-06-20 14:05:12] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:05:56] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:05:56] 2025-06-20 14:05:56[2025-06-20 14:05:56] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:05:56] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:05:56] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 14:06:14] Traceback (most recent call last):
+[2025-06-20 14:06:14] Traceback (most recent call last):
+[2025-06-20 14:06:14]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:06:14]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:06:14] main()[2025-06-20 14:06:14]   File "automatic.py", line 115, in main
+[2025-06-20 14:06:14] main()[2025-06-20 14:06:14]   File "automatic.py", line 115, in main
+[2025-06-20 14:06:14] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 14:06:14]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:06:14] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 14:06:14]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:06:14] subprocess.run(cmd, check=True)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-20 14:06:14] subprocess.run(cmd, check=True)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-20 14:06:14] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-20 14:06:14] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-20 14:06:14] self.wait()[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-20 14:06:14] self.wait()[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-20 14:06:14] return self._wait(timeout=timeout)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-20 14:06:14] return self._wait(timeout=timeout)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-20 14:06:14] (pid, sts) = self._try_wait(0)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-20 14:06:14] (pid, sts) = self._try_wait(0)[2025-06-20 14:06:14]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-20 14:06:14] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-20 14:06:14] KeyboardInterrupt[2025-06-20 14:06:14] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-20 14:06:14] KeyboardInterrupt[2025-06-20 14:06:19] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:06:19] 2025-06-20 14:06:19[2025-06-20 14:06:19] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:06:19] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:06:19] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:06:19] [ERROR] Extraction failed:[2025-06-20 14:06:19] Traceback (most recent call last):
+  File "run_ground_truth_data_extraction.py", line 92, in <module>
+    max_row = df.loc[df["SNR (dB)"].idxmax()]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/series.py", line 2531, in idxmax
+    i = self.argmax(axis, skipna, *args, **kwargs)  # type: ignore[arg-type]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/base.py", line 678, in argmax
+    return nanops.nanargmax(  # type: ignore[return-value]
+  File "/home/cse-vuran-32/.local/lib/python3.8/site-packages/pandas/core/nanops.py", line 91, in _f
+    raise TypeError(
+TypeError: reduction operation 'argmax' not allowed for this dtype
+[2025-06-20 14:06:19] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:06:19] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:06:21] Traceback (most recent call last):
+[2025-06-20 14:06:21] Traceback (most recent call last):
+[2025-06-20 14:06:21]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:06:21]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:06:21] main()[2025-06-20 14:06:21]   File "automatic.py", line 134, in main
+[2025-06-20 14:06:21] main()[2025-06-20 14:06:21]   File "automatic.py", line 134, in main
+[2025-06-20 14:06:21] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:06:21]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:06:21] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:06:21]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:06:21] subprocess.run(cmd, check=True)[2025-06-20 14:06:21]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:06:21] subprocess.run(cmd, check=True)[2025-06-20 14:06:21]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:06:21] raise CalledProcessError(retcode, process.args,[2025-06-20 14:06:21] subprocess[2025-06-20 14:06:21] .[2025-06-20 14:06:21] CalledProcessError[2025-06-20 14:06:21] : [2025-06-20 14:06:21] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:06:21] raise CalledProcessError(retcode, process.args,[2025-06-20 14:06:21] subprocess[2025-06-20 14:06:21] .[2025-06-20 14:06:21] CalledProcessError[2025-06-20 14:06:21] : [2025-06-20 14:06:21] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:08:24] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:08:24] 2025-06-20 14:08:24[2025-06-20 14:08:24] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:08:24] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:08:24] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:08:24] [INFO] Extraction complete.[2025-06-20 14:08:24] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+Step 5: Extracting Tx=27°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-20 14:08:24] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:08:24] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:08:26] Traceback (most recent call last):
+[2025-06-20 14:08:26] Traceback (most recent call last):
+[2025-06-20 14:08:26]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:08:26]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:08:26] main()[2025-06-20 14:08:26]   File "automatic.py", line 134, in main
+[2025-06-20 14:08:26] main()[2025-06-20 14:08:26]   File "automatic.py", line 134, in main
+[2025-06-20 14:08:26] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:08:26]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:08:26] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:08:26]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:08:26] subprocess.run(cmd, check=True)[2025-06-20 14:08:26]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:08:26] subprocess.run(cmd, check=True)[2025-06-20 14:08:26]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:08:26] raise CalledProcessError(retcode, process.args,[2025-06-20 14:08:26] subprocess[2025-06-20 14:08:26] .[2025-06-20 14:08:26] CalledProcessError[2025-06-20 14:08:26] : [2025-06-20 14:08:26] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:08:26] raise CalledProcessError(retcode, process.args,[2025-06-20 14:08:26] subprocess[2025-06-20 14:08:26] .[2025-06-20 14:08:26] CalledProcessError[2025-06-20 14:08:26] : [2025-06-20 14:08:26] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:16:18] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:16:18] 2025-06-20 14:16:18[2025-06-20 14:16:18] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:16:18] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:16:18] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:16:18] [INFO] Extraction complete.[2025-06-20 14:16:18] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+Step 5: Extracting Tx=27°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-20 14:16:18] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:16:18] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:16:20] Traceback (most recent call last):
+[2025-06-20 14:16:20] Traceback (most recent call last):
+[2025-06-20 14:16:20]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:16:20]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:16:20] main()[2025-06-20 14:16:20]   File "automatic.py", line 134, in main
+[2025-06-20 14:16:20] main()[2025-06-20 14:16:20]   File "automatic.py", line 134, in main
+[2025-06-20 14:16:20] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:16:20]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:16:20] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:16:20]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:16:20] subprocess.run(cmd, check=True)[2025-06-20 14:16:20]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:16:20] subprocess.run(cmd, check=True)[2025-06-20 14:16:20]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:16:20] raise CalledProcessError(retcode, process.args,[2025-06-20 14:16:20] subprocess[2025-06-20 14:16:20] .[2025-06-20 14:16:20] CalledProcessError[2025-06-20 14:16:20] : [2025-06-20 14:16:20] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:16:20] raise CalledProcessError(retcode, process.args,[2025-06-20 14:16:20] subprocess[2025-06-20 14:16:20] .[2025-06-20 14:16:20] CalledProcessError[2025-06-20 14:16:20] : [2025-06-20 14:16:20] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:17:27] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:17:27] 2025-06-20 14:17:27[2025-06-20 14:17:27] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:17:27] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:17:27] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:17:28] [INFO] Extraction complete.[2025-06-20 14:17:28] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+Step 5: Extracting Tx=27°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-20 14:17:28] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:17:28] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:17:29] Traceback (most recent call last):
+[2025-06-20 14:17:29] Traceback (most recent call last):
+[2025-06-20 14:17:29]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:17:29]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:17:29] main()[2025-06-20 14:17:29]   File "automatic.py", line 134, in main
+[2025-06-20 14:17:29] main()[2025-06-20 14:17:29]   File "automatic.py", line 134, in main
+[2025-06-20 14:17:29] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:17:29]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:17:29] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:17:29]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:17:29] subprocess.run(cmd, check=True)[2025-06-20 14:17:29]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:17:29] subprocess.run(cmd, check=True)[2025-06-20 14:17:29]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:17:29] raise CalledProcessError(retcode, process.args,[2025-06-20 14:17:29] subprocess[2025-06-20 14:17:29] .[2025-06-20 14:17:29] CalledProcessError[2025-06-20 14:17:29] : [2025-06-20 14:17:29] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:17:29] raise CalledProcessError(retcode, process.args,[2025-06-20 14:17:29] subprocess[2025-06-20 14:17:29] .[2025-06-20 14:17:29] CalledProcessError[2025-06-20 14:17:29] : [2025-06-20 14:17:29] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:31:55] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:31:55] 2025-06-20 14:31:55[2025-06-20 14:31:55] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:31:55] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:31:55] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:31:56] [INFO] Extraction complete.[2025-06-20 14:31:56] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+Step 5: Extracting Tx=27°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-20 14:31:56] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:31:56] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:31:57] Traceback (most recent call last):
+[2025-06-20 14:31:57] Traceback (most recent call last):
+[2025-06-20 14:31:57]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:31:57]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:31:57] main()[2025-06-20 14:31:57]   File "automatic.py", line 134, in main
+[2025-06-20 14:31:57] main()[2025-06-20 14:31:57]   File "automatic.py", line 134, in main
+[2025-06-20 14:31:57] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:31:57]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:31:57] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:31:57]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:31:57] subprocess.run(cmd, check=True)[2025-06-20 14:31:57]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:31:57] subprocess.run(cmd, check=True)[2025-06-20 14:31:57]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:31:57] raise CalledProcessError(retcode, process.args,[2025-06-20 14:31:57] subprocess[2025-06-20 14:31:57] .[2025-06-20 14:31:57] CalledProcessError[2025-06-20 14:31:57] : [2025-06-20 14:31:57] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:31:57] raise CalledProcessError(retcode, process.args,[2025-06-20 14:31:57] subprocess[2025-06-20 14:31:57] .[2025-06-20 14:31:57] CalledProcessError[2025-06-20 14:31:57] : [2025-06-20 14:31:57] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:43:17] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:43:17] 2025-06-20 14:43:17[2025-06-20 14:43:17] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:43:17] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:43:17] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:43:18] [INFO] Extraction complete.[2025-06-20 14:43:18] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+Step 5: Extracting Tx=27°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-20 14:43:18] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:43:18] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:43:19] Traceback (most recent call last):
+[2025-06-20 14:43:19] Traceback (most recent call last):
+[2025-06-20 14:43:19]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:43:19]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:43:19] main()[2025-06-20 14:43:19]   File "automatic.py", line 134, in main
+[2025-06-20 14:43:19] main()[2025-06-20 14:43:19]   File "automatic.py", line 134, in main
+[2025-06-20 14:43:19] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:43:19]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:43:19] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:43:19]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:43:19] subprocess.run(cmd, check=True)[2025-06-20 14:43:19]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:43:19] subprocess.run(cmd, check=True)[2025-06-20 14:43:19]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:43:19] raise CalledProcessError(retcode, process.args,[2025-06-20 14:43:19] subprocess[2025-06-20 14:43:19] .[2025-06-20 14:43:19] CalledProcessError[2025-06-20 14:43:19] : [2025-06-20 14:43:19] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:43:19] raise CalledProcessError(retcode, process.args,[2025-06-20 14:43:19] subprocess[2025-06-20 14:43:19] .[2025-06-20 14:43:19] CalledProcessError[2025-06-20 14:43:19] : [2025-06-20 14:43:19] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:43:47] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 14:43:47] 2025-06-20 14:43:47[2025-06-20 14:43:47] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 14:43:47] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 14:43:47] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 14:46:28] 
+[STEP 3] Extracting Ground Truth Data...[2025-06-20 14:46:29] [INFO] Extraction complete.[2025-06-20 14:46:29] Step 1: Extracting all SNR values...
+Step 2: Extracting max SNR per boresight...
+Step 3: Finding most common Tx Beam in max SNR data...
+[INFO] Most common Tx Beam Index : 27
+Step 4: Extracting best Rx beam for Tx = 27
+Step 5: Extracting Tx=27°, Rx=32 and Tx=32
+
+All data extraction steps completed.
+[2025-06-20 14:46:29] 
+[STEP 4] Plotting Ground Truth Results...[2025-06-20 14:46:29] 
+[RUNNING] plot_ground_truth.py [2025-06-20 14:46:31] Traceback (most recent call last):
+[2025-06-20 14:46:31] Traceback (most recent call last):
+[2025-06-20 14:46:31]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:46:31]   File "automatic.py", line 162, in <module>
+[2025-06-20 14:46:31] main()[2025-06-20 14:46:31]   File "automatic.py", line 134, in main
+[2025-06-20 14:46:31] main()[2025-06-20 14:46:31]   File "automatic.py", line 134, in main
+[2025-06-20 14:46:31] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:46:31]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:46:31] run_python(PLOT_GROUND_TRUTH_SCRIPT)[2025-06-20 14:46:31]   File "automatic.py", line 99, in run_python
+[2025-06-20 14:46:31] subprocess.run(cmd, check=True)[2025-06-20 14:46:31]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:46:31] subprocess.run(cmd, check=True)[2025-06-20 14:46:31]   File "/usr/lib/python3.8/subprocess.py", line 516, in run
+[2025-06-20 14:46:31] raise CalledProcessError(retcode, process.args,[2025-06-20 14:46:31] subprocess[2025-06-20 14:46:31] .[2025-06-20 14:46:31] CalledProcessError[2025-06-20 14:46:31] : [2025-06-20 14:46:31] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 14:46:31] raise CalledProcessError(retcode, process.args,[2025-06-20 14:46:31] subprocess[2025-06-20 14:46:31] .[2025-06-20 14:46:31] CalledProcessError[2025-06-20 14:46:31] : [2025-06-20 14:46:31] Command '['python3', 'plot_ground_truth.py']' returned non-zero exit status 1.[2025-06-20 15:58:39] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 15:58:39] 2025-06-20 15:58:39[2025-06-20 15:58:39] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 15:58:39] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 15:58:39] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 15:58:40] Traceback (most recent call last):
+[2025-06-20 15:58:40] Traceback (most recent call last):
+[2025-06-20 15:58:40]   File "automatic.py", line 162, in <module>
+[2025-06-20 15:58:40]   File "automatic.py", line 162, in <module>
+[2025-06-20 15:58:40] main()[2025-06-20 15:58:40]   File "automatic.py", line 115, in main
+[2025-06-20 15:58:40] main()[2025-06-20 15:58:40]   File "automatic.py", line 115, in main
+[2025-06-20 15:58:40] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 15:58:40]   File "automatic.py", line 99, in run_python
+[2025-06-20 15:58:40] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 15:58:40]   File "automatic.py", line 99, in run_python
+[2025-06-20 15:58:40] subprocess.run(cmd, check=True)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-20 15:58:40] subprocess.run(cmd, check=True)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-20 15:58:40] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-20 15:58:40] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-20 15:58:40] self.wait()[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-20 15:58:40] self.wait()[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-20 15:58:40] return self._wait(timeout=timeout)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-20 15:58:40] return self._wait(timeout=timeout)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-20 15:58:40] (pid, sts) = self._try_wait(0)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-20 15:58:40] (pid, sts) = self._try_wait(0)[2025-06-20 15:58:40]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-20 15:58:40] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-20 15:58:40] KeyboardInterrupt[2025-06-20 15:58:40] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-20 15:58:40] KeyboardInterrupt[2025-06-20 16:00:06] 
+[LOG] Automatic evaluation pipeline started at[2025-06-20 16:00:06] 2025-06-20 16:00:06[2025-06-20 16:00:06] 
+[STEP 1] Updating GROUND_TRUTH_NAME in config.py...[2025-06-20 16:00:06] 
+[STEP 2] Running Optimized Beam Sweep...[2025-06-20 16:00:06] 
+[RUNNING] optimized_beam_sweep.py [2025-06-20 16:00:14] Traceback (most recent call last):
+[2025-06-20 16:00:14] Traceback (most recent call last):
+[2025-06-20 16:00:14]   File "automatic.py", line 162, in <module>
+[2025-06-20 16:00:14]   File "automatic.py", line 162, in <module>
+[2025-06-20 16:00:14] main()[2025-06-20 16:00:14]   File "automatic.py", line 115, in main
+[2025-06-20 16:00:14] main()[2025-06-20 16:00:14]   File "automatic.py", line 115, in main
+[2025-06-20 16:00:14] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 16:00:14]   File "automatic.py", line 99, in run_python
+[2025-06-20 16:00:14] run_python(GROUND_SWEEP_SCRIPT)[2025-06-20 16:00:14]   File "automatic.py", line 99, in run_python
+[2025-06-20 16:00:14] subprocess.run(cmd, check=True)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-20 16:00:14] subprocess.run(cmd, check=True)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 495, in run
+[2025-06-20 16:00:14] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-20 16:00:14] stdout, stderr = process.communicate(input, timeout=timeout)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1020, in communicate
+[2025-06-20 16:00:14] self.wait()[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-20 16:00:14] self.wait()[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[2025-06-20 16:00:14] return self._wait(timeout=timeout)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-20 16:00:14] return self._wait(timeout=timeout)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[2025-06-20 16:00:14] (pid, sts) = self._try_wait(0)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-20 16:00:14] (pid, sts) = self._try_wait(0)[2025-06-20 16:00:14]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[2025-06-20 16:00:14] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-20 16:00:14] KeyboardInterrupt[2025-06-20 16:00:14] (pid, sts) = os.waitpid(self.pid, wait_flags)[2025-06-20 16:00:14] KeyboardInterrupt

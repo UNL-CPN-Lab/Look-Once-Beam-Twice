@@ -1,0 +1,16 @@
+{
+    "experiment_name": "sc_jun23_gain8db_3m_Off_AB11",
+    "experiment_directory": "Adaptive_Beamforming_SC/sc_jun23_gain8db_3m_Off_AB11",
+    "timestamp": "2025-06-23 17:46:33",
+    "location": "sc",
+    "gain": "8db",
+    "distance": "3m",
+    "test_number": "Off_AB11",
+    "sample_size": 2000,
+    "padding": 100,
+    "rotor_speed": "4deg/sec",
+    "Threshold Factor": "0.8",
+    "reference_max_snr_db": "38.65",
+    "Threshold": 37.680899869919436,
+    "Algorithm": "Adaptive Beamforming"
+}

@@ -1,0 +1,35 @@
+# Python dependencies for VIBE / Look-Once-Beam-Twice.
+#
+# Notes:
+#   * UHD (USRP driver) is NOT installed via pip. Install the system package
+#     from https://files.ettus.com/manual/page_install.html and verify with
+#     `uhd_find_devices`. The `uhd` Python module ships with that install.
+#   * The Sivers EVK06002 SDK is a vendor-supplied tool launched via pexpect
+#     from sivers_control.py. It is not redistributed in this repository.
+#   * pyrealsense2 wheels exist for x86_64 Linux/Windows. On ARM (Jetson),
+#     build from source: https://github.com/IntelRealSense/librealsense
+#
+# Tested with Python 3.8 / 3.9 / 3.10.
+
+# ── Numerical & data ──────────────────────────────────────────────────────────
+numpy>=1.21
+pandas>=1.3
+scipy>=1.7
+
+# ── Computer vision & ML ──────────────────────────────────────────────────────
+opencv-python>=4.5
+torch>=1.13
+torchvision>=0.14
+ultralytics>=8.3              # YOLOv11 (BS detector)
+scikit-learn>=1.0             # Used by training pipeline / scalers
+joblib>=1.1                   # *.pkl scaler load/save
+
+# ── Sensors & I/O ─────────────────────────────────────────────────────────────
+pyrealsense2>=2.50            # Intel RealSense camera SDK bindings
+pyserial>=3.5                 # Arduino rotor over /dev/ttyACM*
+pyzmq>=22.0                   # UE-host ↔ TX-host coordination
+pexpect>=4.8                  # Drives the Sivers interactive shell
+
+# ── Plotting ──────────────────────────────────────────────────────────────────
+matplotlib>=3.4
+seaborn>=0.11

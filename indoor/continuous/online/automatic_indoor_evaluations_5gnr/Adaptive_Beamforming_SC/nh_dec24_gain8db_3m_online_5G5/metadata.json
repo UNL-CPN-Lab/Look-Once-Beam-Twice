@@ -1,0 +1,15 @@
+{
+    "experiment_name": "nh_dec24_gain8db_3m_online_5G5",
+    "experiment_directory": "Adaptive_Beamforming_SC/nh_dec24_gain8db_3m_online_5G5",
+    "timestamp": "2025-12-24 13:53:11",
+    "location": "nh",
+    "gain": "8db",
+    "distance": "3m",
+    "test_number": "online_5G5",
+    "sample_size": 2000,
+    "padding": 100,
+    "rotor_speed": "0.125deg/sec",
+    "Threshold": "25.07 dB",
+    "Threshold Quantile": "0.9",
+    "Algorithm": "5G NR Adaptive Beamforming"
+}

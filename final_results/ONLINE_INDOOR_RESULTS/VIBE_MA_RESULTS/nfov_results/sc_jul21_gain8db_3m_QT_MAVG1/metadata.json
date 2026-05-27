@@ -1,0 +1,16 @@
+{
+    "experiment_name": "sc_jul21_gain8db_3m_QT_MAVG1",
+    "experiment_directory": "Adaptive_Beamforming_SC/sc_jul21_gain8db_3m_QT_MAVG1",
+    "timestamp": "2025-07-21 00:33:21",
+    "location": "sc",
+    "gain": "8db",
+    "distance": "3m",
+    "test_number": "QT_MAVG1",
+    "sample_size": 2000,
+    "padding": 100,
+    "rotor_speed": "0.25deg/sec",
+    "Tx Beam Index": "33",
+    "Threshold": "14.35 dB",
+    "Threshold Quantile": "0.8",
+    "Algorithm": "Adaptive Beamforming + Mavg"
+}
