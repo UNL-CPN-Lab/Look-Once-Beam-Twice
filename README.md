@@ -202,6 +202,15 @@ A `CITATION.cff` is also provided.
 
 ---
 
+## Contact
+
+For questions about the code or paper, contact the corresponding authors:
+
+- **Apala Pramanik** — [apramanik2@huskers.unl.edu](mailto:apramanik2@huskers.unl.edu)
+- **Avhishek Biswas** — [abiswas3@huskers.unl.edu](mailto:abiswas3@huskers.unl.edu)
+
+---
+
 ## License
 
 This project is released under the [MIT License](LICENSE).
