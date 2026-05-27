@@ -206,8 +206,9 @@ A `CITATION.cff` is also provided.
 
 For questions about the code or paper, contact the corresponding authors:
 
-- **Apala Pramanik** — [apramanik2@huskers.unl.edu](mailto:apramanik2@huskers.unl.edu)
 - **Avhishek Biswas** — [abiswas3@huskers.unl.edu](mailto:abiswas3@huskers.unl.edu)
+- **Apala Pramanik** — [apramanik2@huskers.unl.edu](mailto:apramanik2@huskers.unl.edu)
+
 
 ---
 
