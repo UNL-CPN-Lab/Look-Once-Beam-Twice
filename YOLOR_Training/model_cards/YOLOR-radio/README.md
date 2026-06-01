@@ -1,3 +1,18 @@
+---
+library_name: ultralytics
+pipeline_tag: object-detection
+tags:
+  - yolo
+  - yolov11
+  - object-detection
+  - coco
+  - mmwave
+  - 6g
+  - beamforming
+  - vibe
+  - yolor
+---
+
 # YOLOR-radio
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-Ultralytics-EE4C2C?logo=pytorch&logoColor=white)
@@ -52,7 +67,7 @@ Code and Data: <https://github.com/UNL-CPN-Lab/Look-Once-Beam-Twice>
 from huggingface_hub import hf_hub_download
 from ultralytics import YOLO
 
-weights = hf_hub_download(repo_id="<org>/YOLOR-radio", filename="last.pt")
+weights = hf_hub_download(repo_id="cpnlab/YOLOR-radio", filename="last.pt")
 model = YOLO(weights)
 
 results = model.predict("path/to/image.jpg", conf=0.25)

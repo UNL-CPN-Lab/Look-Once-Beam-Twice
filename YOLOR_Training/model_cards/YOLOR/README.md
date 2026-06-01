@@ -1,3 +1,18 @@
+---
+library_name: ultralytics
+pipeline_tag: object-detection
+tags:
+  - yolo
+  - yolov11
+  - object-detection
+  - coco
+  - mmwave
+  - 6g
+  - beamforming
+  - vibe
+  - yolor
+  - unified
+---
 
 # YOLOR
 
@@ -18,15 +33,15 @@ the Look Once, Beam Twice mmWave V2X beam-management pipeline
   <img src="all detection.png" alt="YOLOR — example detection of all five custom classes in one inference pass" width="90%">
 </p>
 
-### Source hardware and data
+### Source hardware and models
 
-| Model | Source hardware / location |
-|---|---|
-| `YOLOR-radio` | [Sivers Semiconductors](https://www.sivers-semiconductors.com/) 60 GHz mmWave Radio frontends (EVK06002) |
-| `YOLOR-5GBS` | 5G small cells + co-located lamp/utility poles, captured in Downtown [Lincoln, Nebraska](https://lincoln.ne.gov/), USA |
-| `YOLOR-comm-mmWave` | [Terragraph Sounders](https://terragraph.com/) from [Meta](https://about.meta.com/), deployed in indoor commercial spaces |
-| `YOLOR-Streetlights` | Urban streetlights on the [University of Nebraska–Lincoln](https://www.unl.edu/) campus |
-| `YOLOR` (unified) | Union of all four sources above |
+| Model | Source hardware / location | Hugging Face |
+|---|---|---|
+| `YOLOR-radio` | [Sivers Semiconductors](https://www.sivers-semiconductors.com/) 60 GHz mmWave Radio frontends (EVK06002) | [cpnlab/YOLOR-radio](https://huggingface.co/cpnlab/YOLOR-radio) |
+| `YOLOR-5GBS` | 5G small cells + co-located lamp/utility poles, captured in Downtown [Lincoln, Nebraska](https://lincoln.ne.gov/), USA | [cpnlab/YOLOR-5GBS](https://huggingface.co/cpnlab/YOLOR-5GBS) |
+| `YOLOR-comm-mmWave` | [Terragraph Sounders](https://terragraph.com/) from [Meta](https://about.meta.com/), deployed in indoor commercial spaces | [cpnlab/YOLOR-comm-mmWave](https://huggingface.co/cpnlab/YOLOR-comm-mmWave) |
+| `YOLOR-Streetlights` | Urban streetlights on the [University of Nebraska–Lincoln](https://www.unl.edu/) campus | [cpnlab/YOLOR-Streetlights](https://huggingface.co/cpnlab/YOLOR-Streetlights) |
+| `YOLOR` (unified) | Union of all four sources above | this card |
 
 Reference implementation for the paper:
 
@@ -62,7 +77,7 @@ Reference implementation for the paper:
 from huggingface_hub import hf_hub_download
 from ultralytics import YOLO
 
-weights = hf_hub_download(repo_id="<org>/YOLOR", filename="last.pt")
+weights = hf_hub_download(repo_id="cpnlab/YOLOR", filename="last.pt")
 model = YOLO(weights)
 results = model.predict("path/to/image.jpg", conf=0.25)
 ```

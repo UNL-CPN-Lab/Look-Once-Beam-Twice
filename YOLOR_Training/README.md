@@ -26,16 +26,16 @@ drives beam selection.
 
 | # | Hugging Face name | Custom classes (idx) | Domain |
 |--:|-------------------|----------------------|--------|
-| 1 | `YOLOR-radio` | `radio` (80) | indoor lab / office (COTS) |
-| 2 | `YOLOR-5GBS` | `5G BS` (80), `LampPost` (81) | outdoor street capture |
-| 3 | `YOLOR-comm-mmWave` | `radio` (80), `mmWave radio` (81) | indoor commercial space |
-| 4 | `YOLOR-Streetlights` | `streetlight` (80) | outdoor street capture (streetlight focus) |
-| 5 | `YOLOR` | all five classes (80–84) | unified release model |
+| 1 | [`YOLOR-radio`](https://huggingface.co/cpnlab/YOLOR-radio) | `radio` (80) | indoor lab / office (COTS) |
+| 2 | [`YOLOR-5GBS`](https://huggingface.co/cpnlab/YOLOR-5GBS) | `5G BS` (80), `LampPost` (81) | outdoor street capture |
+| 3 | [`YOLOR-comm-mmWave`](https://huggingface.co/cpnlab/YOLOR-comm-mmWave) | `radio` (80), `mmWave radio` (81) | indoor commercial space |
+| 4 | [`YOLOR-Streetlights`](https://huggingface.co/cpnlab/YOLOR-Streetlights) | `streetlight` (80) | outdoor street capture (streetlight focus) |
+| 5 | [`YOLOR`](https://huggingface.co/cpnlab/YOLOR) | all five classes (80–84) | unified release model |
 
 Models 1–4 are single-domain fine-tunes (one custom class family each); the
 combined release `YOLOR` (model 5) joins all five custom classes into one
-85-class head over the union of the four source datasets. See `MODELS.md`
-for Hugging Face download URLs.
+85-class head over the union of the four source datasets. Each model's
+own card on Hugging Face has download instructions.
 
 
 
@@ -45,8 +45,8 @@ for Hugging Face download URLs.
 from huggingface_hub import hf_hub_download
 from ultralytics import YOLO
 
-# replace with the model you want (see MODELS.md for the full list)
-weights = hf_hub_download(repo_id="<org>/YOLOR", filename="last.pt")
+# replace with the model you want — see https://huggingface.co/cpnlab
+weights = hf_hub_download(repo_id="cpnlab/YOLOR", filename="last.pt")
 model = YOLO(weights)
 
 results = model.predict("path/to/image.jpg", conf=0.25)
@@ -89,7 +89,6 @@ objects and RF-infrastructure cues matter.
 ```
 YOLOR_Training/
 ├── README.md          ← this file
-├── MODELS.md          ← per-model registry: data, custom classes, HF links
 ├── LICENSE            ← see repository root
 ├── code/
 │   ├── YOLOR_train_all_models.ipynb   ← end-to-end pipeline notebook

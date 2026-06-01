@@ -144,7 +144,7 @@ pip install -r requirements.txt
 #      mmWave radio              — mmWave-band RF radios (Sivers / similar)
 #      streetlight (urban streetlight)
 #    Training code, eval, and per-model cards live in `YOLOR_Training/`.
-#    See `YOLOR_Training/MODELS.md` for per-model Hugging Face URLs.
+#    Released weights: https://huggingface.co/cpnlab (5 model repos).
 #    Weights index COCO at 0-79 and stack the five YOLOR custom classes at 80-84.
 ```
 
@@ -253,7 +253,6 @@ For questions about the code or paper, contact the corresponding authors:
 
 - **Avhishek Biswas** — [abiswas3@huskers.unl.edu](mailto:abiswas3@huskers.unl.edu)
 - **Apala Pramanik** — [apramanik2@huskers.unl.edu](mailto:apramanik2@huskers.unl.edu)
-
 
 ---
 

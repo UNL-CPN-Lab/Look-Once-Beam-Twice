@@ -1,3 +1,17 @@
+---
+library_name: ultralytics
+pipeline_tag: object-detection
+tags:
+  - yolo
+  - yolov11
+  - object-detection
+  - coco
+  - 5g
+  - beamforming
+  - vibe
+  - yolor
+---
+
 # YOLOR-5GBS
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-Ultralytics-EE4C2C?logo=pytorch&logoColor=white)
@@ -55,7 +69,7 @@ Reference implementation for the paper:
 from huggingface_hub import hf_hub_download
 from ultralytics import YOLO
 
-weights = hf_hub_download(repo_id="<org>/YOLOR-5GBS", filename="last.pt")
+weights = hf_hub_download(repo_id="cpnlab/YOLOR-5GBS", filename="last.pt")
 model = YOLO(weights)
 results = model.predict("path/to/image.jpg", conf=0.25)
 ```
