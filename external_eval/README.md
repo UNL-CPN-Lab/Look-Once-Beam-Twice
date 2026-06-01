@@ -190,10 +190,6 @@ frames with no detected vehicle are skipped for the YOLOR/VIBE methods.
 }
 ```
 
-## 8. License
-
-Released under the MIT License (see the repository `LICENSE`).
-
 ## 9. Acknowledgments
 
 - The DeepSense 6G team (<https://www.deepsense6g.net/>) for the dataset.

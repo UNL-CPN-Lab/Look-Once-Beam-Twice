@@ -19,7 +19,6 @@ authors:
     affiliation: "School of Computing, University of Nebraska–Lincoln"
     email: "mcv@unl.edu"
 repository-code: "https://github.com/UNL-CPN-Lab/Look-Once-Beam-Twice"
-license: MIT
 keywords:
   - mmWave
   - 6G

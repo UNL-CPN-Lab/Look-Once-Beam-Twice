@@ -7,7 +7,7 @@
 ![YOLOv11](https://img.shields.io/badge/YOLOv11-Ultralytics-00FFFF?logo=yolo&logoColor=black)
 ![UHD](https://img.shields.io/badge/USRP-UHD%204.x-009639)
 ![mmWave](https://img.shields.io/badge/mmWave-60%20GHz%20FR2-6f42c1)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: Pending](https://img.shields.io/badge/License-Pending-lightgrey.svg)
 ![arXiv](https://img.shields.io/badge/arXiv-2605.05071-b31b1b.svg)
 ![Venue](https://img.shields.io/badge/IEEE-SECON%202026-00629B)
 
@@ -19,7 +19,7 @@ Reference implementation for the paper:
 > arXiv: <https://doi.org/10.48550/arXiv.2605.05071>
 
 <p align="center">
-  <img src="images/overview2.jpg" alt="VIBE five-stage camera-primed beam-management pipeline" width="90%">
+  <img src="images/overview2_updated.png" alt="VIBE five-stage camera-primed beam-management pipeline" width="90%">
 </p>
 
 VIBE is a hybrid model-based, closed-loop learning architecture for double-directional mmWave beam management. It combines:
@@ -40,6 +40,7 @@ VIBE is hardware-agnostic and **does not require large-scale labeled RF datasets
 ## Quick links
 
 - Paper (arXiv): <https://doi.org/10.48550/arXiv.2605.05071>
+- YOLOR Training Data (IEEE DataPort) : Coming Soon
 - [Architecture overview](docs/ARCHITECTURE.md)
 - [Hardware setup](docs/HARDWARE.md)
 - [Citing this work](#citation)
@@ -52,6 +53,8 @@ VIBE is hardware-agnostic and **does not require large-scale labeled RF datasets
 ```text
 Look-Once-Beam-Twice/
 ├── configurations/        # Shared config, utils, + plot_experiment.py (per-run plotting glue)
+├── YOLOR_Training/ # Stage-1 YOLOv11 detector — training, eval, model cards for
+│                          #   the five YOLOR custom classes. Weights on Hugging Face; see its README.
 ├── ground_truth_collection/  # Exhaustive sweeps used to derive Q-thresholds and labels
 ├── fullsweep/             # Full TX/RX baseline beam sweep + heatmap plotting
 ├── indoor/                # Indoor experiments (CPN Lab testbed)
@@ -94,7 +97,7 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for a full mapping of variants 
 ## System overview
 
 <p align="center">
-  <img src="images/system.png" alt="VIBE system architecture — UE-side camera + radio, TX-side BS radio, ZMQ control link" width="60%">
+  <img src="images/system_updated.png" alt="VIBE system architecture — UE-side camera + radio, TX-side BS radio, ZMQ control link" width="60%">
 </p>
 
 ## Hardware requirements
@@ -133,9 +136,16 @@ pip install -r requirements.txt
 # 4. Sivers EVK06002 — vendor SDK, not redistributed here.
 #    The interactive Sivers shell is launched via `pexpect` from sivers_control.py.
 
-# 5. (Optional) YOLOv11 weights for the BS detector
-#    Place fine-tuned weights for the four classes
-#    (mmWave radio, TG-Sounder, 5G small cell, urban streetlight) under `models/`.
+# 5. YOLOv11 weights for the BS detector (Stage 1 of the VIBE pipeline)
+#    Pre-trained weights for the five YOLOR custom classes are released on Hugging Face:
+#      radio (TG-Sounder)        — sub-6 GHz radio devices
+#      5G BS (5G small cell)     — outdoor 5G base stations
+#      LampPost                  — utility/lamp-pole structures co-located with BS
+#      mmWave radio              — mmWave-band RF radios (Sivers / similar)
+#      streetlight (urban streetlight)
+#    Training code, eval, and per-model cards live in `YOLOR_Training/`.
+#    See `YOLOR_Training/MODELS.md` for per-model Hugging Face URLs.
+#    Weights index COCO at 0-79 and stack the five YOLOR custom classes at 80-84.
 ```
 
 ### Configure paths
@@ -146,6 +156,41 @@ Before running anything, edit [configurations/config.py](configurations/config.p
 - `JETSON_IP`, `NUC_IP`, `PORT` — match your network setup.
 - `serial_port` — match the rotor's USB port (default `/dev/ttyACM0`).
 - `GROUND_TRUTH_NAME` — the experiment ID for the ground-truth sweep being evaluated.
+
+---
+
+## YOLOR Detection Models
+
+The Stage-1 camera-priming module is documented under
+[YOLOR_Training/](YOLOR_Training). It contains the full
+training, pseudo-labeling, COCO-replay, evaluation, and release pipeline
+for the YOLOv11x detector family used by VIBE.
+
+The released detector family has five fine-tunes:
+
+| Model | Custom classes |
+|---|---|
+| `YOLOR` | `radio`, `5G BS`, `LampPost`, `mmWave radio`, `streetlight` |
+| `YOLOR-radio` | `radio` |
+| `YOLOR-5GBS` | `5G BS`, `LampPost` |
+| `YOLOR-comm-mmWave` | `radio`, `mmWave radio` |
+| `YOLOR-Streetlights` | `streetlight` |
+
+
+All models preserve the 80 COCO classes at indices `0-79` and stack the
+custom RF-infrastructure classes from index `80` upward. The unified
+`YOLOR` release model therefore exposes one 85-class detection head.
+
+Training code lives in
+[YOLOR_Training/code/](YOLOR_Training/code):
+
+- `cp_pseudolabel.py` builds the labels 
+- `cp_coco_replay.py` mixes in class-stratified COCO replay data
+- `cp_train.py` runs fine-tuning and writes `runs/<model>/weights/last.pt`
+- `cp_eval.py` produces the paper-grade custom-class metrics
+
+
+the end-to-end detector training workflow, see [YOLOR_Training/README.md](YOLOR_Training/README.md).
 
 ---
 
@@ -214,10 +259,10 @@ For questions about the code or paper, contact the corresponding authors:
 
 ## License
 
-This project is released under the [MIT License](LICENSE).
+This repository is **All Rights Reserved — license terms pending** while a patent filing is under review. See [LICENSE](LICENSE). No license is granted by the publication of this code; contact the authors for permission to use beyond review.
 
 ---
 
 ## Acknowledgments
 
-This work was conducted at the **Cyber Physical Networking (CPN) Lab**, School of Computing, University of Nebraska–Lincoln, with collaboration from The Ohio State University. The authors thank Sivers Semiconductors, Ettus Research, and the open-source UHD, YOLO, and PyTorch communities.
+This work was conducted at the **[Cyber Physical Networking (CPN) Lab](https://cpn.unl.edu/)**, [School of Computing](https://computing.unl.edu/), [University of Nebraska–Lincoln](https://www.unl.edu/), with collaboration from [The Ohio State University](https://www.osu.edu/). The authors would like to thank [Sivers Semiconductors](https://www.sivers-semiconductors.com/), [Ettus Research](https://www.ettus.com/), and the open-source [Ettus UHD](https://www.ettus.com/), [Ultralytics](https://ultralytics.com/), and [PyTorch](https://pytorch.org/) communities.

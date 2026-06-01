@@ -1,22 +1,42 @@
-MIT License
+Copyright (c) 2026 Avhishek Biswas, Apala Pramanik, Eylem Ekici, Mehmet C. Vuran
+University of Nebraska–Lincoln (Cyber Physical Networking Lab)
+The Ohio State University
 
-Copyright (c) 2026 Avhishek Biswas, Apala Pramanik, Eylem Ekici, Mehmet C. Vuran;
-University of Nebraska–Lincoln; The Ohio State University
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+NOTICE — LICENSE TERMS PENDING
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This repository accompanies the IEEE SECON 2026 paper:
+
+    "Look Once, Beam Twice: Camera-Primed Real-Time Double-Directional
+     mmWave Beam Management for Vehicular Connectivity"
+
+The terms under which this code, the released model weights, and any
+accompanying datasets may be used, reproduced, modified, or
+redistributed are currently under review pending a patent filing.
+
+No license — express or implied — is granted by the publication of
+this source code. In particular, no patent rights are granted. The
+authors expressly reserve all rights they have under copyright, patent,
+trademark, and any other applicable law.
+
+You may read this code only for the purpose of review, comprehension,
+and academic discussion of the SECON 2026 paper. Any other use —
+including but not limited to executing, deploying, modifying,
+redistributing, fine-tuning derived models, integrating into other
+software, or any commercial use — requires prior written permission
+from the authors.
+
+A final license will replace this file in a future commit once the
+patent filing process is complete. To request permission for research
+reproduction, collaborative work, or any commercial discussion,
+contact:
+
+    Avhishek Biswas  — abiswas3@huskers.unl.edu
+    Apala Pramanik   — apramanik2@huskers.unl.edu
+
+THIS REPOSITORY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT.
