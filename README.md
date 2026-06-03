@@ -40,7 +40,7 @@ VIBE is hardware-agnostic and **does not require large-scale labeled RF datasets
 ## Quick links
 
 - Paper (arXiv): <https://doi.org/10.48550/arXiv.2605.05071>
-- YOLOR Training Data (IEEE DataPort) : Coming Soon
+- YOLOR Training Data (IEEE DataPort) : [IEEE DataPort](https://ieee-dataport.org/documents/look-once-beam-twice-camera-primed-real-time-double-directional-mmwave-beam-management-0)
 - [Architecture overview](docs/ARCHITECTURE.md)
 - [Hardware setup](docs/HARDWARE.md)
 - [Citing this work](#citation)
