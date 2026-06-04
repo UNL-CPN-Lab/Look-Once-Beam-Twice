@@ -1,5 +1,18 @@
 # YOLOR :  YOLOv11x fine-tuned object detection Models for BS identification for beam initialization
 
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-YOLOR-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/cpnlab/YOLOR)
+[![IEEE DataPort](https://img.shields.io/badge/IEEE%20DataPort-Dataset-00629B?logo=ieee&logoColor=white)](https://ieee-dataport.org/documents/look-once-beam-twice-camera-primed-real-time-double-directional-mmwave-beam-management-0)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.05071-b31b1b.svg?logo=arxiv&logoColor=white)](https://doi.org/10.48550/arXiv.2605.05071)
+[![Venue](https://img.shields.io/badge/IEEE-SECON%202026-00629B?logo=ieee&logoColor=white)](https://secon2026.ieee-secon.org/)
+
+## Quick links
+
+- Trained models (Hugging Face): [cpnlab/YOLOR](https://huggingface.co/cpnlab/YOLOR)
+- Dataset (IEEE DataPort): [Look Once, Beam Twice dataset](https://ieee-dataport.org/documents/look-once-beam-twice-camera-primed-real-time-double-directional-mmwave-beam-management-0)
+- Paper (arXiv): <https://doi.org/10.48550/arXiv.2605.05071>
+
+---
+
 Training and evaluation code for the **YOLOR** detector family used in the camera-primed 6G mmWave beamforming work (SECON 2026). Each model fine-tunes
 `yolo11x` to detect domain-specific hardware (radios, 5G base stations,
 streetlights) **without forgetting the 80 COCO classes**, so a single
@@ -232,7 +245,6 @@ Default recipe (override via env): `epochs=200`, `patience=0`,
 augmentation, `seed=0`. P1: conf ≥ 0.5, IoU-drop > 0.5. COCO replay:
 8000 class-stratified `train2017` images by default.
 
-rele
 ## Citation
 
 If you use this code or any of the released YOLOR models, please cite the

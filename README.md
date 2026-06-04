@@ -10,6 +10,8 @@
 ![License: Pending](https://img.shields.io/badge/License-Pending-lightgrey.svg)
 ![arXiv](https://img.shields.io/badge/arXiv-2605.05071-b31b1b.svg)
 ![Venue](https://img.shields.io/badge/IEEE-SECON%202026-00629B)
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-YOLOR-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/cpnlab/YOLOR)
+[![IEEE DataPort](https://img.shields.io/badge/IEEE%20DataPort-Dataset-00629B?logo=ieee&logoColor=white)](https://ieee-dataport.org/documents/look-once-beam-twice-camera-primed-real-time-double-directional-mmwave-beam-management-0)
 
 Reference implementation for the paper:
 
@@ -40,7 +42,8 @@ VIBE is hardware-agnostic and **does not require large-scale labeled RF datasets
 ## Quick links
 
 - Paper (arXiv): <https://doi.org/10.48550/arXiv.2605.05071>
-- YOLOR Training Data (IEEE DataPort) : [IEEE DataPort](https://ieee-dataport.org/documents/look-once-beam-twice-camera-primed-real-time-double-directional-mmwave-beam-management-0)
+- Dataset (IEEE DataPort): [IEEE DataPort](https://ieee-dataport.org/documents/look-once-beam-twice-camera-primed-real-time-double-directional-mmwave-beam-management-0)
+- Trained models (Hugging Face): [cpnlab/YOLOR](https://huggingface.co/cpnlab/YOLOR)
 - [Architecture overview](docs/ARCHITECTURE.md)
 - [Hardware setup](docs/HARDWARE.md)
 - [Citing this work](#citation)
@@ -144,7 +147,7 @@ pip install -r requirements.txt
 #      mmWave radio              — mmWave-band RF radios (Sivers / similar)
 #      streetlight (urban streetlight)
 #    Training code, eval, and per-model cards live in `YOLOR_Training/`.
-#    Released weights: https://huggingface.co/cpnlab (5 model repos).
+#    Released weights: https://huggingface.co/cpnlab/YOLOR (5 model repos).
 #    Weights index COCO at 0-79 and stack the five YOLOR custom classes at 80-84.
 ```
 
